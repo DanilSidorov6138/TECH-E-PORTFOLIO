@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Bio</title>
+</head>
+<body>
+    <div id="scrollToTop" class="fixed bottom-4 right-4 bg-blue-600 text-white w-12 h-12 rounded-full cursor-pointer shadow-lg hover:bg-blue-700 transition duration-300 flex items-center justify-center" onclick="scrollToTop()">
+        <span class="text-lg flex items-center justify-center h-full">↑</span>
+    </div>
+    
+    <script src="scrolltoTop.js"></script>
+    <header class="pb-6 bg-gray-100 lg:pb-0">
+        <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8 relative z-20">
+            <!-- lg+ -->
+            <nav class="flex items-center justify-between h-16 lg:h-20">
+                <div class="flex-shrink-0">
+                    <h1 class="text-2xl font-bold">HDFS 497 - Research Paper</h1>
+                </div>
+    
+              
+    
+                <div class="hidden lg:flex lg:items-center lg:ml-auto lg:space-x-10">
+                    <a href="index.html" title="" class="text-base font-medium text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600"> Home </a>
+    
+                    <a href="bio.html" title="" class="text-base font-medium text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600"> Bio </a>
+    
+                    <a href="resume.html" title="" class="text-base font-medium text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600"> Resume </a>
+
+                    <div class="relative">
+                        <button onclick="this.nextElementSibling.classList.toggle('hidden')" class="text-base font-medium text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600 flex items-center">
+                            Sample Works
+                            <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+                        <div class="absolute hidden w-48 bg-white border rounded-md shadow-lg mt-2 z-30">
+                            <a href="instruction.html" class="block px-4 py-2 text-sm text-black hover:bg-gray-100">Instruction Set</a>
+                            <a href="desc.html" class="block px-4 py-2 text-sm text-black hover:bg-gray-100">Technical Description</a>
+                            <a href="landingpage.html" class="block px-4 py-2 text-sm text-black hover:bg-gray-100">Redesigned Landing Page</a>
+                            <a href="paper.html" class="block px-4 py-2 text-sm text-black hover:bg-gray-100">Research Paper</a>
+                            <a href="reflection.html" class="block px-4 py-2 text-sm text-black hover:bg-gray-100">Reflection on Works</a>
+                        </div>
+                    </div>
+                </div>
+    
+            </nav>
+    
+            <!-- xs to lg -->
+            <nav class="pt-4 pb-6 bg-white border border-gray-200 rounded-md shadow-md lg:hidden">
+                <div class="flow-root">
+                    <div class="flex flex-col px-6 -my-2 space-y-1">
+                        <a href="index.html" title="" class="inline-flex py-2 text-base font-medium text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600"> Home </a>
+    
+                        <a href="bio.html" title="" class="inline-flex py-2 text-base font-medium text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600"> Bio </a>
+    
+                        <a href="resume.html" title="" class="inline-flex py-2 text-base font-medium text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600"> Resume </a>
+    
+                        <a href="instruction.html" title="" class="inline-flex py-2 text-base font-medium text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600"> Instruction Set </a>
+
+                        <a href="desc.html" title="" class="inline-flex py-2 text-base font-medium text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600"> Technical Description </a>
+
+                        <a href="landingpage.html" title="" class="inline-flex py-2 text-base font-medium text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600"> Redesigned Landing Page </a>
+                        
+                        <a href="paper.html" title="" class="inline-flex py-2 text-base font-medium text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600"> Research Paper </a>
+
+                        <a href="reflection.html" title="" class="inline-flex py-2 text-base font-medium text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600"> Reflection on Works </a>
+                    </div>
+                </div>
+    
+                <div class="px-6 mt-6">
+                </div>
+            </nav>
+        </div>
+    </header>
+    <section class="container mx-auto p-10">
+        <div class="text-center">
+            <h1 class="text-4xl font-extrabold text-black mb-4">Health Disparities: Media Analysis Paper</h1>
+            <p class="text-xl text-black mb-2">Danil Sidorov</p>
+            <p class="text-lg text-black mb-2">Penn State Human Development and Family Studies</p>
+            <p class="text-lg text-black mb-2">HDFS 497</p>
+            <p class="text-lg text-black mb-2">Kristopher Struckmeyer</p>
+            <p class="text-lg text-black">April 14, 2024</p>
+        </div>
+    </section>
+
+    
+    <section class="container mx-auto p-14">
+            <p style="text-indent: 50px;" class="text-xl text-black mb-4">
+                The American healthcare system is a paradox; it is one of the most advanced systems in the world, yet it also seems to be one of the most archaic. Trillions of dollars are spent every year in the United States, averaging about 13,500 dollars per person, which speaks to how advanced it is. Yet it is plagued with inequalities affecting over 20 million Americans who do not have health insurance, or frankly, any way to pay, and are just one injury or illness away from bankruptcy. Adding health disparities, which are defined as worse health, particularly for socially disadvantaged people, speaks to the unfortunate truth that Americans have to deal with. While dealing with bankruptcy is horrifying, especially when it relates to the cost of medicine that is saving one’s life, it becomes worse when one adds the fact that geography plays a significant role in whether one is cured or left to deal with the injury or illness by themselves. This fact is especially prevalent in marginalized communities, where poverty, social barriers, and a lack of infrastructure prevent the people living there from getting the treatment they need to survive. The American healthcare system is marred with stories of money, loss, and patients being diluted to numbers on a spreadsheet. This not only harms the people getting the treatment but also damages the recovery of patients. Being forced to worry about rent, living conditions, food, and how to survive the cost of bankruptcy not only damages the mental health of the person, it makes recovery almost impossible. The main purpose of the paper is to outline the reality of American healthcare, how it relates to health inequalities, and provide a background on healthcare in other countries to demonstrate that sacrificing everything and anything to get help for an ailing friend or family does not have to be the one and only way. 
+            </p>
+            <p style="text-indent: 50px;" class="text-xl text-black mb-4">
+                The media that I have chosen is a PBS documentary titled “Critical Care: America vs. the World." This is an exceptional documentary outlining the highs and lows of the American healthcare system as well as contrasting healthcare systems from around the world. The documentary first focuses on the American healthcare system and makes a point in detailing the disparities found in it despite being the wealthiest country in the world. It talks about the cruel reality that individuals without insurance face and how the high cost of medicine and treatments leads to death and financial difficulties for those involved. It further articulates this point by showing hospitals near the Texas Medical Center, which is a renowned hospital, where it shows the truth of health care in low-income communities. The documentary then begins by comparing it with other countries healthcare systems, such as the NHS, which is the United Kingdom's National Health Service, and how the citizens of the United Kingdom praise it for its ability to deliver quality healthcare to millions of people, all while being extremely cost-effective. The documentary also makes sure to note that not everyone is happy with it, as it interviews citizens who tell about long wait times for non-urgent procedures and the lack of funding, which trickles down to affect those under it. The documentary goes on to discuss Switzerland, which is a system of private insurance companies that is similar to America but different in the fact that every citizen must have health insurance. It goes on to contrast with America again in that it states that the Swiss government heavily regulates the industry, and in spite of the high costs, a lot of people are pleased with the system, as it makes sure that the people have multiple choices. The documentary then discusses its last two countries, Australia and Canada. Both of these countries have a dual system that combines public and private insurance, which allows everyone to have access to important medical procedures while making sure those who want private health insurance have access to amenities like quicker times or better hospital rooms or coverage for pharmaceutical drugs. The documentary finally explores options that the American healthcare system can take in order to increase coverage and overall close the gap on health inequalities that plague the system.
+            </p>
+            <p style="text-indent: 50px;" class="text-xl text-black mb-4">
+                The main points of the documentary that I will be analyzing in conjunction with other sources is the disparities in American healthcare, which is the overall state of healthcare in America, that is plagued with disparities and high costs, the impact of lack of insurance, where Americans have to skip annual doctor visits, treatments, and even life saving medicine just so they can avoid bankruptcy as well as the affects such medical outcomes and recovery rates of those without insurance, Contrast with universal healthcare systems, of both countries such as Switzerland, Australia, Canada, United Kingdom, Netherlands, as well as the medical outcomes of both a universal and private health care system, and finally different Policy Choices and Reform, that were enacted in other countries, as well as possible changes for policy regarding the American health industry.
+
+            </p>
+            <p style="text-indent: 50px;" class="text-xl text-black mb-4">
+                American health care is plagued with disparities; it affects tens of millions of people. Medical outcomes as well as recovery are affected by factors of socioeconomic status, race, and geography. These factors have plagued the industry for decades, and while it was relatively known by everyone, from individuals to corporations to even the American government, COVID-19 shoved four major health care crises into the limelight with such force that it shocked even the unshockable. The four main crises brought to light are the national insurance coverage, the deep financial losses suffered by providers, substantial racial and ethnic disparities, and a huge crisis in public health. According to Blumenthal, D., Fowler, E. J., Abrams, M., & Collins, S. R. from the New England Journal of Medicine, “Black persons constitute 13% of the U.S. population but account for 20% of COVID-19 cases and more than 22% of COVID-19 deaths, as of July 22, 2020. Hispanic people, at 18% of the population, account for almost 33% of new cases nationwide. 11 Nearly 20% of U.S. counties are disproportionately black, and these counties have accounted for more than half of COVID-19 cases and almost 60% of COVID-19 deaths nationally” (Blumenthal, 2020). The inequalities suffered by people of color reveal, or rather bring back to light, the long-lived failure of both America and the health industry. This problem is a result of systemic discrimination that not only causes inadequate care for people of color in health care but also for those living in impoverished areas to simply go without medical care due to either social barriers or simply a lack of access to care, which leaves those affected substantially more vulnerable to common illnesses, but in the case of COVID-19, they account for more than 20% of deaths and cases. It may seem like simply purchasing health insurance would solve all the problems that plague, but while that would solve a lot of problems, it is definitely not the end-all-be-all solution. COVID-19 affected everyone, no matter their socioeconomic status, race, religion, or previous medical afflictions. Cancer is a particularly deadly and unforgiving illness that affects all aspects of life, including, but not limited to, the monetary ones. It is an especially costly illness for those with or without insurance, and COVID-19 only exacerbated it. It exacerbated it so much that some people reduced their non-health care spending or simply didn't go to their appointments because of the cost. According to Williams, C. P. et al., from Health Insurance and financial hardship in cancer survivors during the COVID-19 pandemic, it states, “Our results suggest private insurance and Medicare coverage may not sufficiently protect against out-of-pocket medical costs in individuals with cancer. In our study, individuals with ACA, employer-sponsored, or Medicare insurance were at higher risk of trouble paying for healthcare during the COVID-19 pandemic compared to Medicaid enrollees” (Williams, 2020). This not only helps to show the disparities involving socioeconomic status but also further outlines that medical insurance is not something that can fix every problem, simply due to the cost of said insurance. This point is further elaborated on by the documentary “Critical Care: America vs. the World,” where it shows the frightening disparities felt just a short distance from one of the best hospitals in Texas and how “the mostly black residents here are disproportionately uninsured... they often don't get good care until it's too late. They die, on average, twenty years earlier than residents in other parts of Houston.” The problems with American healthcare have been compounding day after day, with no permanent solution. Politicians and leaders simply bandage the problem so it can continue working with the breaks. The disparities are often faced head-on by people of color, and they rarely depend on insurance status or socioeconomic status. The problem with American health care isn't simply due to the generally capitalistic and private industry, as it is proven in countries with private health insurance and mandatory coverage, but due to the lack of government regulation and increasingly higher and hidden costs that seem to never end.
+
+            </p>
+            <p style="text-indent: 50px;" class="text-xl text-black mb-4">
+                The main item that separates people receiving care from those who lack health care is insurance. It is the great separator where it concerns the healthcare industry. Millions of people have it, and millions of people do not. Insurance can be the only thing standing between getting your illness treated at a reasonable price or simply going bankrupt from it. However, sometimes it is still not enough. According to the PBS documentary “Critical Care: America vs. the World,"  it states, “Our total health care spending is more than all these nations spend combined. And yet Americans still die of preventable and treatable diseases at higher rates than in other high-income countries'' (PBS, 2021). Insurance, or rather the lack of it, can dramatically impact life before, during, and after medical treatment, so much so that it can affect recovery and the medical outcomes of treatments. Financial toxicity, which is defined as the financial hardship the patient experiences as a side effect of his or her illness (Murphy, 2020), This financial toxicity comes as a result of trying to pay for either the insurance necessary to pay for treatment or paying for treatment out of pocket, which to this day is seemingly impossible. However, financial toxicity does not stop at making it harder to pay for either health care or non-health care needs; it can also affect stress levels, employment status, and income. This is hard enough to deal with by itself, but adding in an illness or injury and the resulting stress makes medical outcomes worse. According to Murphy, P.B., et al. from the Journal of Trauma and Acute Care Surgery, "young, uninsured patients with lengthy hospital stays are at the highest risk for financial toxicity. Financial toxicity is associated with depression, PTSD, and worse HRQoL up to 1 year following trauma” (Murphy, 2020). The impact of even one of these can disrupt and, in some cases, ruin a person’s life, and including the recovery from trauma, there is no telling what might happen, including but not limited to reinvigorating said trauma. While this is an extremely depressing statistic, it only covers what happens to individuals after their hospital stay and on their road to recovery. Health insurance is associated with better outcomes in the admitted patient population, even after adjusting for other factors such as race and socioeconomic status (Seifi, 2021). If one does not have health insurance, the worst possible scenario that could cross their mind is going bankrupt from the resulting cost. It is impossible to think that because one does not have insurance, the resultant mortality rate increases, but it was found that, “Among 4,737,999 discharges, 5.6% had no insurance. The hospital mortality rate among uninsured and insured patients was 4.1% and 3.7%, respectively. (Seifi, 2021). There are, of course, multiple reasons to explain this statistic; the first and most obvious one is the delayed access to said treatment. Patients with no insurance may delay going to the hospital and getting care because of the price tag associated with it. This goes hand in hand with uninsured patients being sicker at admission because they delayed treatment. Another reason would be the financial constraints that they may have. Uninsured patients may not immediately opt in for certain medicines, treatments, or therapies that may improve their injury or illness because of the price. A final reason might be because of the elderly population. While most admitted elderly patients have insurance, the ones that don’t have a higher mortality rate do so for numerous reasons. One is that they have more medical complications due to having more than one injury or illness. Another may be because they simply do not have access to healthcare and medications, and by the time they are admitted, they are more sick due to other illnesses. Insurance plays an important role in every part of the health industry, from access to medical outcomes to pharmaceuticals and treatments. However, it is not the final solution; the financial strain that insurance puts on individuals and families causes unnecessary strife and hardship. While there is no one solution that can fix everything, lowering the cost of insurance and making sure everyone has it is an excellent step in the right direction.
+
+            </p>
+            <p style="text-indent: 50px;" class="text-xl text-black mb-4">
+                There are many different types of healthcare systems; some of the more prominent ones include a universal healthcare system, a private system, or a dual system that includes both universal and private healthcare. It's hard to decide which one is the best, as they all have their positives and negatives. In England, they have a universal healthcare system called the NHS, or National Health Service. It is described as a paragon of health by many of its citizens, including the family of Liam, who has Down syndrome, epilepsy, and chronic lung disease. They say that “Liam's life and the incredible care he gets are a testament to the United Kingdom's national health service... known as the NHS” (PBS, 2021). Without the NHS, Liam's family would have gone bankrupt many times over, and quite possibly Liam would not be alive without them. The family does not have to worry about the cost of ambulances, hospital beds, or procedures, but like all things, there are both positives and negatives. The UK and the NHS still deal with funding costs, long waiting lists for non-urgent procedures, and, of course, racial disparities, according to the BMJ. Smith, S. et al. state, "BBlack children are 10 times more likely to be referred to CAMHS via social services than via a GP.” (Smith, 2022). This means that children who are living in abuse or unfit conditions are being looked over by their general practitioner, or doctor. This is a startling statistic that reveals the start of the racial disparities plaguing the UK in health care. While universal health care will no doubt improve the lives of many, does the existence of such a system really provide universal access? Getting treatment for an illness or injury requires two steps: getting treated and recovering, and according to Jasper Tromp et al. from the European Journal of Preventive Cardiology, they state, “While there was substantial regional variation in post-discharge mortality, there were strong associations between mortality and both country income and income disparity in patients with heart failure” (Tromp, 2020). This shows that while getting treatment with universal health care can easily be done, the recovery and all that entails after one’s discharge become exceedingly complicated. With issues ranging from transportation to outpatient care to medication, those with a lower socioeconomic status might struggle to be able to afford these types of care, which leads back to the argument of universal health care but not universal access.
+
+            </p>
+            <p style="text-indent: 50px;" class="text-xl text-black mb-4">
+                While it may seem that the present and future state of health care is bleak, there is always room and time for policy reform. One of these reforms is in the form of medicaid, which, according to President Biden, extends coverage and lowers healthcare costs for so many Americans (PBS, 2021). This, however, should just be the starting point for change. America and so many other countries' healthcare industries suffer from many problems, including but not limited to racial disparities, health disparities, a lack of funding, and a lack of support from governments. While reform is challenging and may take many years, it is not impossible, as evidenced by the Netherlands, which, after twenty years of political debate, instituted change “to overcome a number of structural deficiencies in Dutch health care, in particular persistent inefficiencies, a lack of innovation, and the unfair distribution of the financial burden. To resolve these problems, health care had to be transformed from a supply-driven system into a ‘demand-led’ system with less bureaucratic state interference.” (Maarse, 2024). This alone proves that, while challenging and difficult, it is not impossible. The Netherlands healthcare system was wrought with deficiencies, inefficiencies, and stagnant innovation, so to fix this, they led a major reform to push the system to one of demand-led. While the Netherlands enacted reform to help their immobile health care system, America’s system is the opposite, one of the most advanced and innovative, so what is the reason that will spur reform in America? The reason, or rather, the catalyst that revealed the reason, is: COVID-19. The pandemic “is testing healthcare systems like never before, and all efforts are now being put into controlling the COVID-19 crisis. We witness increasing morbidity, delivery systems that are sometimes on the brink of collapse, and some shameless rent-seeking.” (Auener, 2020). The virus revealed the startling truth that while America’s health industry is one of the most advanced, it is ridden with problems that have been bandaged up and left to fester. It revealed many problems, such as care delivery, care coordination, overtreatment, admin complexity, fraud, and pricing failures. This pandemic, however, has a silver lining, as because the healthcare industry was on the brink of collapse, policy changes and reform, which would usually take years to push through, were done in months to accommodate surges of patients and COVID-19 cases. While reform is always a good thing when done in reaction to an event, it always leaves an undesired effect. The main reason to establish reform and change is to accommodate and help people, especially essential workers, who, according to Winifred L. Boal et al. from Sage Journals, state that "lack of health insurance and underinsurance [are] common among subsets of essential workers.” (Boal, 2021). This is the reason why policy reform should always be at the forefront of every politician's mind. Essential workers who are vital to the continuation and normal routine of America are left without access to health care and vital medication, which will undoubtedly cause health problems either in the present or future. Although health care policy reform is universally thought to be a good thing, is there any concrete proof that it enhances the lives of those affected? According to Seonghoon Kim from Wiley Health Economics, the answer is yes: “The Massachusetts [healthcare] reform increased the proportion of individuals who are very satisfied with their lives” (Kim, 2021). The reason why, of course, is obvious, as everything from healthcare reform trickles down to every other part of an individual's life. As people do not have to pay so much for health care, they worry less about going to the doctor, getting medication, and other treatments, which leads them to be able to afford non-healthcare needs, which again trickle down. By reducing healthcare costs and reforming the system, it can positively affect individuals' lives beyond healthcare itself.
+
+            </p>
+            <p style="text-indent: 50px;" class="text-xl text-black mb-4">
+                The overall health care system globally is an industry that has its ups and downs. Countries like the United Kingdom, Switzerland, the Netherlands, and Canada all seem to have systems that make health care both affordable and sufficiently advanced, yet they are all plagued with different problems such as racial disparities, wait times, and certain costs. However, unlike America, they are going in the right direction; the healthcare system in the USA is advanced and yet inaccessible for millions of people, which leads to a widening gap in health disparities. It should be known, however, that there is no right path to take, as one policy cannot possibly make over three hundred million people happy. Nevertheless, the first step of any possible solution is the widening of access to healthcare, particularly through insurance and reform, which needs to be carefully mandated through government oversight so as to make it accessible to everyone regardless of socioeconomic status. Although the solution may not be as simple as a copy and paste of other countries' systems, it is in the right direction. 
+
+            </p>
+            
+            
+          
+    </section>
+
+    <section class="container mx-auto p-10">
+        <div class="text-center">
+            <h1 class="text-4xl font-extrabold text-black mb-4">References</h1>
+            <div class="text-left mx-auto max-w-4xl">
+                <p class="text-lg text-black mb-4" style="text-indent: -4em; margin-left: 2em;">
+                    Auener, S., Kroon, D., Wackers, E., van Dulmen, S., & Jeurissen, P. (2020). Covid-19: A window of opportunity for positive healthcare reforms. *International Journal of Health Policy and Management*. https://doi.org/10.34172/ijhpm.2020.66
+                </p>
+                <p class="text-lg text-black mb-4" style="text-indent: -4em; margin-left: 2em;">
+                    Blumenthal, D., Fowler, E. J., Abrams, M., & Collins, S. R. (2020). Covid-19 — implications for the health care system. *New England Journal of Medicine, 383*(15), 1483–1488. https://doi.org/10.1056/nejmsb2021088
+                </p>
+                <p class="text-lg text-black mb-4" style="text-indent: -4em; margin-left: 2em;">
+                    Boal, W. L., Li, J., & Silver, S. R. (2021). Health care access among essential critical infrastructure workers, 31 states, 2017-2018. *Public Health Reports, 137*(2), 301–309. https://doi.org/10.1177/0033354921996688
+                </p>
+                <p class="text-lg text-black mb-4" style="text-indent: -4em; margin-left: 2em;">
+                    Kim, S., & Koh, K. (2021). Health insurance and subjective well-being: Evidence from two healthcare reforms in the United States. *Health Economics, 31*(1), 233–249. https://doi.org/10.1002/hec.4448
+                </p>
+                <p class="text-lg text-black mb-4" style="text-indent: -4em; margin-left: 2em;">
+                    Maarse, H., & Jeurissen, P. (2024). Healthcare reform in the Netherlands: After 15 years of regulated competition. *Health Economics, Policy and Law*, 1–12. https://doi.org/10.1017/s1744133123000385
+                </p>
+                <p class="text-lg text-black mb-4" style="text-indent: -4em; margin-left: 2em;">
+                    Murphy, P. B., Severance, S., Savage, S., Obeng-Gyasi, S., Timsina, L. R., & Zarzaur, B. L. (2019). Financial toxicity is associated with worse physical and emotional long-term outcomes after traumatic injury. *Journal of Trauma and Acute Care Surgery, 87*(5), 1189–1196. https://doi.org/10.1097/ta.0000000000002409
+                </p>
+                <p class="text-lg text-black mb-4" style="text-indent: -4em; margin-left: 2em;">
+                    Public Broadcasting Service. (2021, April 1). Critical care: America vs. the world. *PBS NewsHour*. https://www.pbs.org/video/critical-care-america-vs-the-world-f0cwgk/
+                </p>
+                <p class="text-lg text-black mb-4" style="text-indent: -4em; margin-left: 2em;">
+                    Seifi, A., Bahadori, M., Gheibi, Z., Kanegi, S. L., & Mirahmadizadeh, A. (2021). Hospital outcomes in uninsured patients with diseases and disorders of the nervous system: A national cohort study during a decade in the United States. *Cureus*. https://doi.org/10.7759/cureus.13702
+                </p>
+                <p class="text-lg text-black mb-4" style="text-indent: -4em; margin-left: 2em;">
+                    Smith, S., & Mohan, R. (2022). The NHS is not an island: Tackling racial disparities in healthcare. *BMJ*. https://doi.org/10.1136/bmj.o944
+                </p>
+                <p class="text-lg text-black mb-4" style="text-indent: -4em; margin-left: 2em;">
+                    Tromp, J., & Collins, S. (2019). Universal healthcare but not universal access? *European Journal of Preventive Cardiology, 27*(1), 75–78. https://doi.org/10.1177/2047487319870015
+                </p>
+                <p class="text-lg text-black mb-4" style="text-indent: -4em; margin-left: 2em;">
+                    Williams, C. P., Rocque, G. B., Caston, N. E., Gallagher, K. D., Angove, R. S., Anderson, E., de Moor, J. S., Halpern, M. T., Offodile, A. C., & Gidwani, R. (2022). Health insurance and financial hardship in cancer survivors during the COVID-19 pandemic. *PLOS ONE, 17*(8). https://doi.org/10.1371/journal.pone.0272740
+                </p>
+            </div>
+        </div>
+    </section>
+    
+
+
+    
+    
+    
+</body>
+</html>

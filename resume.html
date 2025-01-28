@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_SVG"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Resume</title>
+</head>
+<body class="bg-gray-50 font-sans text-gray-800">
+    <div id="scrollToTop" class="fixed bottom-4 right-4 bg-blue-600 text-white w-12 h-12 rounded-full cursor-pointer shadow-lg hover:bg-blue-700 transition duration-300 flex items-center justify-center" onclick="scrollToTop()">
+        <span class="text-lg flex items-center justify-center h-full">↑</span>
+    </div>
+    
+    <script src="scrolltoTop.js"></script>
+    <header class="pb-6 bg-gray-100 lg:pb-0">
+        <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+            <!-- lg+ -->
+            <nav class="flex items-center justify-between h-16 lg:h-20">
+                <div class="flex-shrink-0">
+                    <h1 class="text-2xl font-bold">Resume</h1>
+                </div>
+    
+              
+    
+                <div class="hidden lg:flex lg:items-center lg:ml-auto lg:space-x-10">
+                    <a href="index.html" title="" class="text-base font-medium text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600"> Home </a>
+    
+                    <a href="bio.html" title="" class="text-base font-medium text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600"> Bio </a>
+    
+                    <a href="resume.html" title="" class="text-base font-medium text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600"> Resume </a>
+
+                    <div class="relative">
+                        <button onclick="this.nextElementSibling.classList.toggle('hidden')" class="text-base font-medium text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600 flex items-center">
+                            Sample Works
+                            <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+                        <div class="absolute hidden w-48 bg-white border rounded-md shadow-lg mt-2">
+                            <a href="instruction.html" class="block px-4 py-2 text-sm text-black hover:bg-gray-100">Instruction Set</a>
+                            <a href="desc.html" class="block px-4 py-2 text-sm text-black hover:bg-gray-100">Technical Description</a>
+                            <a href="landingpage.html" class="block px-4 py-2 text-sm text-black hover:bg-gray-100">Redesigned Landing Page</a>
+                            <a href="paper.html" class="block px-4 py-2 text-sm text-black hover:bg-gray-100">Research Paper</a>
+                            <a href="reflection.html" class="block px-4 py-2 text-sm text-black hover:bg-gray-100">Reflection on Works</a>
+                        </div>
+                    </div>
+                </div>
+    
+            </nav>
+    
+            <!-- xs to lg -->
+            <nav class="pt-4 pb-6 bg-white border border-gray-200 rounded-md shadow-md lg:hidden">
+                <div class="flow-root">
+                    <div class="flex flex-col px-6 -my-2 space-y-1">
+                        <a href="index.html" title="" class="inline-flex py-2 text-base font-medium text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600"> Home </a>
+    
+                        <a href="bio.html" title="" class="inline-flex py-2 text-base font-medium text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600"> Bio </a>
+    
+                        <a href="resume.html" title="" class="inline-flex py-2 text-base font-medium text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600"> Resume </a>
+    
+                        <a href="instruction.html" title="" class="inline-flex py-2 text-base font-medium text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600"> Instruction Set </a>
+
+                        <a href="desc.html" title="" class="inline-flex py-2 text-base font-medium text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600"> Technical Description </a>
+
+                        <a href="landingpage.html" title="" class="inline-flex py-2 text-base font-medium text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600"> Redesigned Landing Page </a>
+                        
+                        <a href="paper.html" title="" class="inline-flex py-2 text-base font-medium text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600"> Research Paper </a>
+
+                        <a href="reflection.html" title="" class="inline-flex py-2 text-base font-medium text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600"> Reflection on Works </a>
+                    </div>
+                </div>
+    
+                <div class="px-6 mt-6">
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <div class="mb-8 text-center mx-auto mt-8">
+        <h1 style="font-size: 2.5rem;" 
+        class="text-2xl font-semibold text-blue-600 mb-4">Danil Sidorov</h1>
+        <h2 class="text-xl font-semibold text-blue-600 mb-4">dvs6138@psu.edu</h2>
+    </div>
+   
+    <!-- Main Content -->
+    <section class="container mx-auto">
+        <div class="pb-10 text-center">
+            <button onclick="document.getElementById('pdfViewer').classList.toggle('hidden')" 
+            class="justify-center bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+                View resume as PDF
+            </button>
+        </div>
+        <div class="w-full md:w-4/5 lg:w-3/4 mx-auto mb-8">
+            <embed 
+                id="pdfViewer" 
+                src="https://danilsidorov6138.github.io/images/RESUME_FULL_STACK.pdf#zoom=100" 
+                class="w-full h-screen hidden" 
+                type="application/pdf">
+        </div>
+        
+
+        
+        
+
+        <!-- Education -->
+        <div class="mb-8">
+            <h2 class="text-xl font-semibold text-blue-600 mb-4">Education</h2>
+            <div class="border-l-4 border-gray-600 pl-4">
+                <p class="text-lg font-bold">Bachelor of Science in Computer Science, GPA: 3.71</p>
+                <p>The Pennsylvania State University, State College, PA</p>
+                <p class="text-sm text-gray-600">May 2025</p>
+            </div>
+        </div>
+
+        <!-- Experience -->
+        <div class="mb-8">
+            <h2 class="text-xl font-semibold text-blue-600 mb-4">Experience</h2>
+
+            <!-- Verizon -->
+            <div class="border-l-4 border-gray-600 pl-4 mb-6">
+                <p class="text-lg font-bold">Global Networks and Technology Intern</p>
+                <p class="text-sm text-gray-600">Verizon, Basking Ridge, NJ | Summer 2023, 2024</p>
+                <ul class="list-disc pl-6 space-y-2">
+                    <li>Utilized Python and machine learning to reduce support ticket volume by 30%, improving operational efficiency.</li>
+                    <li>Developed dashboards in Splunk and Tableau, providing real-time insights for decision-making across 5 teams.</li>
+                    <li>Presented findings to executives, leading to a 25% reduction in critical issues and enhanced customer satisfaction.</li>
+                </ul>
+            </div>
+
+            <!-- Polar Express -->
+            <div class="border-l-4 border-gray-600 pl-4 mb-6">
+                <p class="text-lg font-bold">Full Stack Developer</p>
+                <p class="text-sm text-gray-600">Polar Express, Englishtown, NJ | March 2022 -- June 2024</p>
+                <ul class="list-disc pl-6 space-y-2">
+                    <li>Developed an eCommerce platform that increased online sales by 40% in 6 months.</li>
+                    <li>Engineered a fulfillment application improving operational efficiency by 35% and reducing delivery times.</li>
+                    <li>Implemented automated testing, reducing bug rates by 50%, ensuring high-quality deliverables.</li>
+                </ul>
+            </div>
+
+            <!-- eBay -->
+            <div class="border-l-4 border-gray-600 pl-4">
+                <p class="text-lg font-bold">eCommerce Analyst</p>
+                <p class="text-sm text-gray-600">eBay, Marlboro, NJ | Jan. 2019 – Present</p>
+                <ul class="list-disc pl-6 space-y-2">
+                    <li>Generated over $200k in gross revenue and $75k in profits, increasing overall profitability by 25%.</li>
+                    <li>Streamlined inventory management, reducing overhead costs by 15% with data-driven strategies.</li>
+                    <li>Implemented AI-driven tools that optimized pricing, boosting sales by 20% and improving market forecasts.</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Projects -->
+        <div class="mb-8">
+            <h2 class="text-xl font-semibold text-blue-600 mb-4">Projects</h2>
+
+            <!-- Finance App -->
+            <div class="border-l-4 border-gray-600 pl-4 mb-6">
+                <p class="text-lg font-bold">Finance App | <span class="text-sm">Python, CustomTkinter, Financial APIs</span></p>
+                <p class="text-sm text-gray-600">December 2023</p>
+                <ul class="list-disc pl-6 space-y-2">
+                    <li>Developed a financial management application for tracking expenses, setting budgets, and planning financial goals.</li>
+                    <li>Integrated 5+ financial APIs for real-time updates, ensuring accurate financial data.</li>
+                    <li>Implemented advanced security measures including encryption, ensuring 100% data protection.</li>
+                </ul>
+            </div>
+
+            <!-- Symbol Copy -->
+            <div class="border-l-4 border-gray-600 pl-4">
+                <p class="text-lg font-bold">Symbol Copy | <span class="text-sm">Laravel, MySQL, JavaScript, HTML, CSS</span></p>
+                <p class="text-sm text-gray-600">September 2023</p>
+                <ul class="list-disc pl-6 space-y-2">
+                    <li>Developed a web application featuring a library of over 1,000 math symbols for easy user access.</li>
+                    <li>Increased user engagement by 200% with real-time updates and one-click symbol-copy functionality.</li>
+                    <li>Successfully attracted 2,000+ users and sold the platform for $2,000.</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Achievements -->
+        <div class="mb-8">
+            <h2 class="text-xl font-semibold text-blue-600 mb-4">Achievements</h2>
+
+            <!-- Dean's List -->
+            <div class="border-l-4 border-gray-600 pl-4 mb-6">
+                <p class="text-lg font-bold">Dean's List</p>
+                <p class="text-sm text-gray-600">August 2021 -- Present</p>
+                <ul class="list-disc pl-6 space-y-2">
+                    <li>Recognized for maintaining a GPA of 3.5 or higher.</li>
+                </ul>
+            </div>
+
+            <!-- Campus Scholarship -->
+            <div class="border-l-4 border-gray-600 pl-4">
+                <p class="text-lg font-bold">Campus Scholarship</p>
+                <p class="text-sm text-gray-600">August 2021 -- May 2023</p>
+                <ul class="list-disc pl-6 space-y-2">
+                    <li>Awarded a $3,000 scholarship per semester for academic performance, leadership, and community service.</li>
+                </ul>
+            </div>
+        </div>
+
+    </section>
+
+
+    
+    
+    
+</body>
+</html>

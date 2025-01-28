@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <title>Previous Works</title>
+</head>
+<body>
+    <div id="scrollToTop" class="fixed bottom-4 right-4 bg-blue-600 text-white w-12 h-12 rounded-full cursor-pointer shadow-lg hover:bg-blue-700 transition duration-300 flex items-center justify-center" onclick="scrollToTop()">
+        <span class="text-lg flex items-center justify-center h-full">↑</span>
+    </div>
+    
+    <script src="scrolltoTop.js"></script>
+    <header class="pb-6 bg-gray-100 lg:pb-0">
+        <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+            <!-- lg+ -->
+            <nav class="flex items-center justify-between h-16 lg:h-20">
+                <div class="flex-shrink-0">
+                    <h1 class="text-2xl font-bold break-words">Reflection on Works</h1>
+                </div>
+    
+           
+                <div class="hidden lg:flex lg:items-center lg:ml-auto lg:space-x-10">
+                    <a href="index.html" title="" class="text-base font-medium text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600"> Home </a>
+    
+                    <a href="bio.html" title="" class="text-base font-medium text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600"> Bio </a>
+    
+                    <a href="resume.html" title="" class="text-base font-medium text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600"> Resume </a>
+
+                    <div class="relative">
+                        <button onclick="this.nextElementSibling.classList.toggle('hidden')" class="text-base font-medium text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600 flex items-center">
+                            Sample Works
+                            <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+                        <div class="absolute hidden w-48 bg-white border rounded-md shadow-lg mt-2 z-30">
+                            <a href="instruction.html" class="block px-4 py-2 text-sm text-black hover:bg-gray-100">Instruction Set</a>
+                            <a href="desc.html" class="block px-4 py-2 text-sm text-black hover:bg-gray-100">Technical Description</a>
+                            <a href="landingpage.html" class="block px-4 py-2 text-sm text-black hover:bg-gray-100">Redesigned Landing Page</a>
+                            <a href="paper.html" class="block px-4 py-2 text-sm text-black hover:bg-gray-100">Research Paper</a>
+                            <a href="reflection.html" class="block px-4 py-2 text-sm text-black hover:bg-gray-100">Reflection on Works</a>
+                        </div>
+                    </div>
+                </div>
+    
+            </nav>
+    
+            <!-- xs to lg -->
+            <nav class="pt-4 pb-6 bg-white border border-gray-200 rounded-md shadow-md lg:hidden">
+                <div class="flow-root">
+                    <div class="flex flex-col px-6 -my-2 space-y-1">
+                        <a href="index.html" title="" class="inline-flex py-2 text-base font-medium text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600"> Home </a>
+    
+                        <a href="bio.html" title="" class="inline-flex py-2 text-base font-medium text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600"> Bio </a>
+    
+                        <a href="resume.html" title="" class="inline-flex py-2 text-base font-medium text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600"> Resume </a>
+    
+                        <a href="instruction.html" title="" class="inline-flex py-2 text-base font-medium text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600"> Instruction Set </a>
+
+                        <a href="desc.html" title="" class="inline-flex py-2 text-base font-medium text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600"> Technical Description </a>
+
+                        <a href="landingpage.html" title="" class="inline-flex py-2 text-base font-medium text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600"> Redesigned Landing Page </a>
+                        
+                        <a href="paper.html" title="" class="inline-flex py-2 text-base font-medium text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600"> Research Paper </a>
+
+                        <a href="reflection.html" title="" class="inline-flex py-2 text-base font-medium text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600"> Reflection on Works </a>
+                    </div>
+                </div>
+    
+                <div class="px-6 mt-6">
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main class="px-4 py-8 mx-auto max-w-7xl sm:px-6 lg:px-8">
+        <!-- Cards Section -->
+        <div class="space-y-6">
+            <!-- Card 1: Landing Page -->
+            <div class="p-4 bg-white border border-gray-200 rounded-lg shadow">
+                <button 
+                    onclick="document.getElementById('landingPageContent').classList.toggle('hidden')" 
+                    class="flex justify-between w-full text-lg font-bold text-left text-gray-900 focus:outline-none"
+                >
+                    Landing Page
+                    <svg class="w-6 h-6 transition-transform transform rotate-180" id="landingPageIcon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                    </svg>
+                </button>
+                <div id="landingPageContent" class="mt-4 text-gray-700">
+                    <p>
+                        This is a landing page made for a business, that I was an intern for. The landing page showcases the overall business and country that the company was trying to expand into, Virtual Addresses and Dubai respectively. The landing page features navigation, a hero section, statistics about the company, different shops that they work with, featured products, as well as a section that teachers users and clients how it works from start to finish.
+                        This page demonstrates my ability to design, prototype, create, and style websites with multiple sections, pages, and components. The landing page reflects my ability to complete a project with specific requirements, specifications, and my understanding of HTML, CSS, and Javascript. 
+                        From this project, I learned the importance of prioritizing user experience, especially when it comes to displaying and presenting professional business content.
+                        I want potential employers to see my ability to integrate creativity, design and technical knowledge, through this landing page.                    </p>
+                </div>
+            </div>
+
+            <!-- Card 2: Research Paper -->
+            <div class="p-4 bg-white border border-gray-200 rounded-lg shadow">
+                <button 
+                    onclick="document.getElementById('researchPaperContent').classList.toggle('hidden')" 
+                    class="flex justify-between w-full text-lg font-bold text-left text-gray-900 focus:outline-none"
+                >
+                    Research Paper
+                    <svg class="w-6 h-6 transition-transform transform rotate-180" id="researchPaperIcon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                    </svg>
+                </button>
+                <div id="researchPaperContent" class="mt-4 text-gray-700">
+                    <p>
+                        This was a research paper done for the class HDFS 497, HUMAN DEVELOPMENT AND FAMILY STUDIES 497. The assignment was to pick a piece of media and analyze the different themes as it relates to the course. For my research paper I chose to write about Health Disparities in America and how it compares to other countries. The paper is 13 pages long, about 4000 words, and I achieved a final grade of 96%. This piece of writing required in-depth research, combining multiple pieces of complex research, and then finally presenting it in a structured and persuasive manner. This media analysis paper accurately reflects my ability to communicate complex information succinctly as well as my ability to construct logical arguments based on evidence. I want potential employers to see this paper and see my dedication to crafting engaging and persuasive arguments as well as my commitment to producing quality work.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        // Optional: Toggle the rotation of the icons
+        document.querySelectorAll('button').forEach(button => {
+            button.addEventListener('click', function () {
+                const icon = this.querySelector('svg');
+                icon.classList.toggle('rotate-180');
+            });
+        });
+    </script>
+</body>
+</html>

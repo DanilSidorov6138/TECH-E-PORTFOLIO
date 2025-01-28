@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <title>Technical Description</title>
+</head>
+<body>
+    <div id="scrollToTop" class="fixed bottom-4 right-4 bg-blue-600 text-white w-12 h-12 rounded-full cursor-pointer shadow-lg hover:bg-blue-700 transition duration-300 flex items-center justify-center" onclick="scrollToTop()">
+        <span class="text-lg flex items-center justify-center h-full">↑</span>
+    </div>
+    
+    <script src="scrolltoTop.js"></script>
+    <header class="pb-6 bg-gray-100 lg:pb-0">
+        <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+            <!-- lg+ -->
+            <nav class="flex items-center justify-between h-16 lg:h-20">
+                <div class="flex-shrink-0">
+                    <h1 class="text-2xl font-bold break-words">Technical Description</h1>
+                </div>
+    
+           
+                <div class="hidden lg:flex lg:items-center lg:ml-auto lg:space-x-10">
+                    <a href="index.html" title="" class="text-base font-medium text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600"> Home </a>
+    
+                    <a href="bio.html" title="" class="text-base font-medium text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600"> Bio </a>
+    
+                    <a href="resume.html" title="" class="text-base font-medium text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600"> Resume </a>
+
+                    <div class="relative">
+                        <button onclick="this.nextElementSibling.classList.toggle('hidden')" class="text-base font-medium text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600 flex items-center">
+                            Sample Works
+                            <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+                        <div class="absolute hidden w-48 bg-white border rounded-md shadow-lg mt-2">
+                            <a href="instruction.html" class="block px-4 py-2 text-sm text-black hover:bg-gray-100">Instruction Set</a>
+                            <a href="desc.html" class="block px-4 py-2 text-sm text-black hover:bg-gray-100">Technical Description</a>
+                            <a href="landingpage.html" class="block px-4 py-2 text-sm text-black hover:bg-gray-100">Redesigned Landing Page</a>
+                            <a href="paper.html" class="block px-4 py-2 text-sm text-black hover:bg-gray-100">Research Paper</a>
+                            <a href="reflection.html" class="block px-4 py-2 text-sm text-black hover:bg-gray-100">Reflection on Works</a>
+                        </div>
+                    </div>
+                </div>
+    
+            </nav>
+    
+            <!-- xs to lg -->
+            <nav class="pt-4 pb-6 bg-white border border-gray-200 rounded-md shadow-md lg:hidden">
+                <div class="flow-root">
+                    <div class="flex flex-col px-6 -my-2 space-y-1">
+                        <a href="index.html" title="" class="inline-flex py-2 text-base font-medium text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600"> Home </a>
+    
+                        <a href="bio.html" title="" class="inline-flex py-2 text-base font-medium text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600"> Bio </a>
+    
+                        <a href="resume.html" title="" class="inline-flex py-2 text-base font-medium text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600"> Resume </a>
+    
+                        <a href="instruction.html" title="" class="inline-flex py-2 text-base font-medium text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600"> Instruction Set </a>
+
+                        <a href="desc.html" title="" class="inline-flex py-2 text-base font-medium text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600"> Technical Description </a>
+
+                        <a href="landingpage.html" title="" class="inline-flex py-2 text-base font-medium text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600"> Redesigned Landing Page </a>
+                        
+                        <a href="paper.html" title="" class="inline-flex py-2 text-base font-medium text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600"> Research Paper </a>
+
+                        <a href="reflection.html" title="" class="inline-flex py-2 text-base font-medium text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600"> Reflection on Works </a>
+                    </div>
+                </div>
+    
+                <div class="px-6 mt-6">
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container mx-auto p-10">
+        <h1 class="text-4xl font-bold  mb-6">IP Addresses: How They Work, The Types, and Their Uses</h1>
+        <button onclick="document.getElementById('pdfViewer').classList.toggle('hidden')" 
+            class="justify-center bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded ">
+                View Technical Description as PDF
+            </button>
+
+            <div class="w-full md:w-4/5 lg:w-3/4 mx-auto mb-8 p-4">
+                <embed 
+                    id="pdfViewer" 
+                    src="https://danilsidorov6138.github.io/images/desc_final.pdf#zoom=100" 
+                    class="w-full h-screen hidden" 
+                    type="application/pdf">
+            </div>
+            
+        
+
+        <section class="mb-6">
+            <h2 class="text-2xl font-bold mb-4">Introduction</h2>
+            <p>IP addresses, short for Internet Protocol addresses, are unique, numerical identifiers for computers, tablets, phones, servers, and anything connected to Wi-Fi. IP addresses serve two purposes: they identify devices on the network and provide the device’s location.</p>
+        </section>
+
+        <section class="mb-6">
+            <h2 class="text-2xl font-bold mb-4">Structure</h2>
+            <p>There are two types of IP addresses that are used on the internet today: IPv4 and IPv6</p>
+            <ul class="list-disc pl-8">
+                <li><strong>IPv4:</strong>
+                    <ul class="list-disc pl-8">
+                        <li>The most widely used format</li>
+                        <li>Made up of 4 sets of numbers (0-255) separated by periods</li>
+                        <li>Supports 4,294,967,296 unique addresses</li>
+                    </ul>
+                </li>
+                <li><strong>IPv6:</strong>
+                    <ul class="list-disc pl-8">
+                        <li>Developed to combat limitations of IPv4</li>
+                        <li>Uses a 128-bit format with 8 groups of 4 hexadecimal numbers (0-9, A-F)</li>
+                        <li>340 undecillion unique IP addresses</li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+
+        <section class="mb-6 flex items-start gap-8">
+            <div class="w-1/2">
+                <h2 class="text-2xl font-bold mb-4">Functions</h2>
+                <ul class="list-decimal pl-8">
+                    <li><strong>Location:</strong> Every device on a network is assigned an IP address so routers can find the best possible path to or from that device.</li>
+                    <li><strong>Identification:</strong> An IP address uniquely identifies each device on the internet, enabling communication.</li>
+                </ul>
+            </div>
+            <div class="w-1/2">
+                <img src="https://danilsidorov6138.github.io/images/figure1_desc.jpg" alt="Functions Image" class="w-full rounded-lg shadow-2xl p-4" style="max-width: 90%;">
+            </div>
+        </section>
+
+        <section class="mb-6">
+            <h2 class="text-2xl font-bold mb-4">Types</h2>
+            <p>There are two main types of addresses, Private and Public.</p>
+            <ul class="list-decimal pl-8">
+                <li><strong>Public Addresses:</strong> Accessible directly from the internet. Used for communication and routing between devices and networks.</li>
+                <li><strong>Private Addresses:</strong> Used within homes, schools, and businesses and are not accessible from the internet.</li>
+            </ul>
+            <div class="w-1/2">
+                <img src="https://danilsidorov6138.github.io/images/figure2_desc.jpg" alt="Types Image" class="w-full rounded-lg shadow-2xl mt-4 p-4" style="max-width: 90%;">
+            </div>
+        </section>
+
+        <section class="mb-6">
+            <h2 class="text-2xl font-bold mb-4">Static vs Dynamic IPs</h2>
+            <ul class="list-disc pl-8">
+                <li><strong>Static IP Addresses:</strong>
+                    <ul class="list-disc pl-8">
+                        <li>Remain constant and are set manually to a device.</li>
+                        <li>Ideal for servers and websites requiring a fixed address.</li>
+                    </ul>
+                </li>
+                <li><strong>Dynamic IP Addresses:</strong>
+                    <ul class="list-disc pl-8">
+                        <li>Change every time a device connects to a network.</li>
+                        <li>Assigned automatically by DHCP without manual intervention.</li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+
+        <section class="mb-6">
+            <h2 class="text-2xl font-bold mb-4">Classes of IPv4 Addresses</h2>
+            <p>IPv4 Addresses are grouped into five classes, A through E, based on their size and use case:</p>
+            <ul class="list-decimal pl-8">
+                <li><strong>Class A:</strong> Large networks (e.g., Amazon, Google)</li>
+                <li><strong>Class B:</strong> Medium-sized networks (e.g., Universities)</li>
+                <li><strong>Class C:</strong> Small networks (e.g., Small businesses)</li>
+                <li><strong>Class D:</strong> Multicasting (e.g., Streaming services)</li>
+                <li><strong>Class E:</strong> Research and experimental purposes</li>
+            </ul>
+            <div class="w-1/2">
+                <img src="https://danilsidorov6138.github.io/images/figure3_desc.jpg" alt="Classes Image" class="w-full rounded-lg shadow-2xl mt-4 p-4" style="max-width: 90%;">
+            </div>
+        </section>
+
+        <section class="mb-6">
+            <h2 class="text-2xl font-bold mb-4">DHCP</h2>
+            <p>DHCP is a protocol that automatically assigns IPs to devices on a network. Each IP is assigned for a limited lease time before being stored or reassigned. This simplifies IP management and prevents conflicts.</p>
+            <div class="w-1/2">
+                <img src="https://danilsidorov6138.github.io/images/figure4_desc.jpg" alt="DHCP Image" class="w-full rounded-lg shadow-2xl mt-4 p-4" style="max-width: 90%;">
+            </div>
+        </section>
+
+        <section class="mb-6">
+            <h2 class="text-2xl font-bold mb-4">Subnetting</h2>
+            <p>Subnetting divides a large network into smaller subnetworks, improving management, performance, and security. A subnet mask determines which part of an IP represents the network and host ID.</p>
+        </section>
+
+        <section class="mb-6">
+            <h2 class="text-2xl font-bold mb-4">NAT</h2>
+            <p>NAT (Network Address Translation) maps multiple private IPs to a single public IP. It conserves IPs, enhances security, and supports private networks.</p>
+            <ul class="list-decimal pl-8">
+                <li><strong>Static NAT:</strong> One-to-one mapping of private to public IPs.</li>
+                <li><strong>Dynamic NAT:</strong> Chooses available public IPs dynamically.</li>
+                <li><strong>PAT:</strong> Maps several private IPs to one public IP using port numbers.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2 class="text-2xl font-bold mb-4">Conclusion</h2>
+            <p>IP addresses are the backbone of the internet. They enable communication and data routing across networks, making them essential for IT and network management.</p>
+        </section>
+
+        <section class="mb-6 mt-12">
+            <h2 class="text-2xl font-bold mb-4">Image Credits</h2>
+            <ul class="list-disc pl-8">
+                <li>Image 1 Credit: <a href="https://ptgmedia.pearsoncmg.com/images/chap10_9780137449941/elementLinks/10fig01_alt.jpg" class="text-blue-600 hover:underline">https://ptgmedia.pearsoncmg.com/images/chap10_9780137449941/elementLinks/10fig01_alt.jpg</a></li>
+                <li>Image 2 Credit: <a href="https://www.homenethowto.com/wp-content/uploads/routing-introduced-as-post-delivery.jpg" class="text-blue-600 hover:underline">https://www.homenethowto.com/wp-content/uploads/routing-introduced-as-post-delivery.jpg</a></li>
+                <li>Image 3 Credit: <a href="https://media.geeksforgeeks.org/wp-content/cdn-uploads/IP_addressing_3.jpg" class="text-blue-600 hover:underline">https://media.geeksforgeeks.org/wp-content/cdn-uploads/IP_addressing_3.jpg</a></li>
+                <li>Image 4 Credit: <a href="https://miro.medium.com/v2/resize:fit:528/1*1KIknnLKXpXptCyVRf6KCQ.png" class="text-blue-600 hover:underline">https://miro.medium.com/v2/resize:fit:528/1*1KIknnLKXpXptCyVRf6KCQ.png</a></li>
+            </ul>
+        </section>
+    </div>
+    
+
+    
+    
+</body>
+</html>

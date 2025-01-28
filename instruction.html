@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <title>Instruction Set</title>
+</head>
+<body>
+    <div id="scrollToTop" class="fixed bottom-4 right-4 bg-blue-600 text-white w-12 h-12 rounded-full cursor-pointer shadow-lg hover:bg-blue-700 transition duration-300 flex items-center justify-center" onclick="scrollToTop()">
+        <span class="text-lg flex items-center justify-center h-full">↑</span>
+    </div>
+    
+    <script src="scrolltoTop.js"></script>
+    <header class="pb-6 bg-gray-100 lg:pb-0">
+        <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+            <!-- lg+ -->
+            <nav class="flex items-center justify-between h-16 lg:h-20">
+                <div class="flex-shrink-0">
+                    <h1 class="text-2xl font-bold break-words">Instruction Set</h1>
+                </div>
+    
+           
+    
+                <div class="hidden lg:flex lg:items-center lg:ml-auto lg:space-x-10">
+                    <a href="index.html" title="" class="text-base font-medium text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600"> Home </a>
+    
+                    <a href="bio.html" title="" class="text-base font-medium text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600"> Bio </a>
+    
+                    <a href="resume.html" title="" class="text-base font-medium text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600"> Resume </a>
+
+                    <div class="relative">
+                        <button onclick="this.nextElementSibling.classList.toggle('hidden')" class="text-base font-medium text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600 flex items-center">
+                            Sample Works
+                            <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+                        <div class="absolute hidden w-48 bg-white border rounded-md shadow-lg mt-2">
+                            <a href="instruction.html" class="block px-4 py-2 text-sm text-black hover:bg-gray-100">Instruction Set</a>
+                            <a href="desc.html" class="block px-4 py-2 text-sm text-black hover:bg-gray-100">Technical Description</a>
+                            <a href="landingpage.html" class="block px-4 py-2 text-sm text-black hover:bg-gray-100">Redesigned Landing Page</a>
+                            <a href="paper.html" class="block px-4 py-2 text-sm text-black hover:bg-gray-100">Research Paper</a>
+                            <a href="reflection.html" class="block px-4 py-2 text-sm text-black hover:bg-gray-100">Reflection on Works</a>
+                        </div>
+                    </div>
+                </div>
+    
+            </nav>
+    
+            <!-- xs to lg -->
+            <nav class="pt-4 pb-6 bg-white border border-gray-200 rounded-md shadow-md lg:hidden">
+                <div class="flow-root">
+                    <div class="flex flex-col px-6 -my-2 space-y-1">
+                        <a href="index.html" title="" class="inline-flex py-2 text-base font-medium text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600"> Home </a>
+    
+                        <a href="bio.html" title="" class="inline-flex py-2 text-base font-medium text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600"> Bio </a>
+    
+                        <a href="resume.html" title="" class="inline-flex py-2 text-base font-medium text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600"> Resume </a>
+    
+                        <a href="instruction.html" title="" class="inline-flex py-2 text-base font-medium text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600"> Instruction Set </a>
+
+                        <a href="desc.html" title="" class="inline-flex py-2 text-base font-medium text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600"> Technical Description </a>
+
+                        <a href="landingpage.html" title="" class="inline-flex py-2 text-base font-medium text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600"> Redesigned Landing Page </a>
+                        
+                        <a href="paper.html" title="" class="inline-flex py-2 text-base font-medium text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600"> Research Paper </a>
+
+                        <a href="reflection.html" title="" class="inline-flex py-2 text-base font-medium text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600"> Reflection on Works </a>
+                    </div>
+                </div>
+    
+                <div class="px-6 mt-6">
+                </div>
+            </nav>
+        </div>
+    </header>
+
+   
+        </div>
+        
+
+<section class="container mx-auto p-10">
+    <div class="div">
+        <div class="div">
+            <h1 class="text-4xl font-extrabold text-gray-800 mb-8">How to Make a Simple Breakfast Sandwich</h1> 
+            <button onclick="document.getElementById('pdfViewer').classList.toggle('hidden')" 
+            class="justify-center bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+                View Instruction Set as PDF
+            </button>
+        </div>
+        <div class="w-full md:w-4/5 lg:w-3/4 mx-auto mb-8 p-4">
+            <embed 
+                id="pdfViewer" 
+                src="https://danilsidorov6138.github.io/images/instruct_set.pdf#zoom=100" 
+                class="w-full h-screen hidden" 
+                type="application/pdf">
+        </div>
+        
+        
+
+        <h2 class="text-3xl font-bold text-gray-700 mt-8">Introduction</h2>
+        <p class="mb-4">This simple instruction set will show you how to make a delicious and quick breakfast sandwich that is easy to prepare, and that anyone can enjoy. This recipe is perfect for anyone who just wants quick and simple meals, and has basic cooking skills–ideally the ability to use a stove, and make simple meals like eggs.</p>
+    <strong class="text-red-500 mb-4">NOTE: Children under the age of 13 should not cook this sandwich without supervision and assistance.</strong>
+    
+        <h2 class="text-3xl font-bold text-gray-700 mt-8">Materials Needed:</h2>
+        <p class="mb-4">To create this breakfast sandwich, gather or locate the tools and items listed below. Listed below are all the items you will need to create the sandwich, and having them in one place makes the preparation, cooking, and assembly faster and easier.</p>
+    
+        <h3 class="text-2xl font-bold text-gray-700 mt-6">Ingredients</h3>
+        <ul class="list-disc ml-6">
+            <li>2 pieces of Bread</li>
+            <li>1.5 tbsp of Butter</li>
+            <li>2 pieces of Bacon</li>
+            <li>2 Eggs</li>
+            <li>Salt</li>
+            <li>Optional: Spices</li>
+        </ul>
+    
+        <h3 class="text-2xl font-bold text-gray-700 mt-6">Tools</h3>
+        <ul class="list-disc ml-6">
+            <li>Stove</li>
+            <li>Plate</li>
+            <li>Skillet</li>
+            <li>Spatula</li>
+        </ul>
+    
+        <h2 class="text-3xl font-bold text-gray-700 mt-8">Nutrition Facts</h2>
+        <p class="mb-2">The nutritional facts of this sandwich will vary depending on if any substitutions were used, but if the recipe is followed to the specifications, amounts, and ingredients the sandwich will be:</p>
+        <ul class="list-disc ml-6">
+            <li>464 Calories</li>
+            <li>22.7 grams of protein</li>
+            <li>29.8 grams of fat</li>
+            <li>23.6 grams of carbs</li>
+        </ul>
+        <p class="mb-4 mt-2">So while this may not be the healthiest breakfast you can have, it is one that is quick to prepare and extremely tasty.</p>
+        
+        <div class="flex items-start gap-8">
+            <div class="w-1/2">
+                <h2 class="text-3xl font-bold text-gray-700 mt-8">Preparation</h2>
+                <ol class="list-decimal ml-6">
+                    <li><strong class="font-bold">Gather your ingredients:</strong>
+                        <p class="ml-6 mb-2">Layout all the ingredients that you have prepared near but not next to the stove, and make sure they are in arm's reach and easy to grab.</p>
+                    </li>
+                    <li><strong class="font-bold">Preheat the skillet:</strong>
+                        <p class="ml-6 mb-2">Place the skillet on the stove and turn the stove on to medium heat, allow it to warm up while you prepare the other ingredients (as shown in figure 1).</p>
+                    </li>
+                    <li><strong class="font-bold">Prepare the ingredients:</strong>
+                        <p class="ml-6 mb-2">
+                            <strong>Bacon:</strong> If you have regular pre-sliced bacon, take out the two strips that you need and set it aside, else slice it.
+                            <br>
+                            <strong>Eggs:</strong> For fried eggs, keep them whole, in a safe place so that they don't roll and break.
+                            <br>
+                            <strong>Bread:</strong> If using pre-sliced bread, set aside pieces for later, else slice it into ½ - 1 inch slices.
+                        </p>
+                    </li>
+                    <li><strong class="font-bold">Set up your cooking area:</strong>
+                        <p class="ml-6 mb-2">After laying out and preparing your ingredients and tools, clear the area close to the stove to ensure that they will not affect or get in the cooking process. Ensure that you have a plate ready to go, to transfer cooked food to.</p>
+                        <strong class="text-red-500 mb-4">NOTE: It is advisable to take out the butter at least 10-15 minutes before the start of cooking, to ease with the assembly of the sandwich but not necessary to do so.</strong>
+                    </li>
+                </ol>
+            </div>
+            <div class="w-1/2">
+                <img src="https://danilsidorov6138.github.io/images/figure1.jpg" alt="" class="w-3/4 h-full rounded-lg shadow-lg mt-16">
+            </div>
+        </div>
+        
+    
+        <h2 class="text-3xl font-bold text-gray-700 mt-8">Cooking</h2>
+        <div class="flex items-start gap-8">
+            <div class="w-1/2">
+                <ol class="list-decimal ml-6">
+                    <li><strong class="font-bold">Cook the Bacon:</strong>
+                        <ol class="list-decimal ml-6">
+                            <li>Place the two bacon strips into the skillet.</li>
+                            <li>Let it rest on the preheated skillet, for 5 minutes before flipping (as shown in figure 2).</li>
+                            <li>Let it rest on the preheated skillet, for another 5 minutes before grabbing your spatula and transferring the bacon to the plate you prepared earlier.</li>
+                        </ol>
+                    </li>
+                </ol>
+            </div>
+            <div class="w-1/2">
+                <img src="https://danilsidorov6138.github.io/images/figure2.jpg" alt="" class="w-full rounded-lg shadow-lg">
+            </div>
+        </div>
+
+        <div class="flex items-start gap-8 mt-8">
+            <div class="w-1/2">
+                <ol class="list-decimal ml-6" start="2">
+                    <li><strong class="font-bold">Cook the Eggs:</strong>
+                        <ol class="list-decimal ml-6">
+                            <li>In the same skillet as you cooked the bacon in, crack 2 eggs, one at a time into the skillet.</li>
+                            <li>Let the eggs cook for at most 2 minutes.</li>
+                            <li>Using your spatula, separate the two egg yolks so that they have around equal amounts of egg whites.</li>
+                            <li>Using your spatula, flip the eggs (as shown in figure 3).</li>
+                            <li>Season with salt or other spices.</li>
+                            <li>Let the eggs cook for at most another 2 minutes.</li>
+                            <li>Using your spatula, transfer the eggs to your prepared plate.</li>
+                        </ol>
+                    </li>
+                </ol>
+            </div>
+            <div class="w-1/2">
+                <img src="https://danilsidorov6138.github.io/images/figure3.jpg" alt="" class="w-full rounded-lg shadow-lg">
+            </div>
+        </div>
+
+        <div class="flex items-start gap-8 mt-8">
+            <div class="w-1/2">
+                <ol class="list-decimal ml-6" start="3">
+                    <li><strong class="font-bold">Toasting Bread:</strong>
+                        <ol class="list-decimal ml-6">
+                            <li>Lower the stove to a medium-low heat.</li>
+                            <li>Take a ½ tbsp of butter and place it in the skillet (as shown in figure 4).</li>
+                            <li>Let it melt.</li>
+                            <li>Place the two pieces of bread on the skillet.</li>
+                            <li>Let them toast on the skillet for 1.5 minutes.</li>
+                            <li>Flip both pieces of bread.</li>
+                            <li>Let them toast for another 1.5 minutes.</li>
+                            <li>Using your spatula, transfer them to your plate.</li>
+                        </ol>
+                        <p class="mt-4 text-red-500 font-bold">WARNING: Operating a stove can be hazardous—keep flammable items away from heat sources and never leave it unattended.</p>
+                    </li>
+                </ol>
+            </div>
+            <div class="w-1/2">
+                <img src="https://danilsidorov6138.github.io/images/figure4.jpg" alt="" class="w-full rounded-lg shadow-lg">
+            </div>
+        </div>
+
+        <h2 class="text-3xl font-bold text-gray-700 mt-8">Alternative Cooking Times and Ways</h2>
+        <div class="flex items-start gap-8">
+            <div class="w-full">
+                <ol class="list-decimal ml-6">
+                    <li><strong class="font-bold">Bacon:</strong>
+                        <p>Bacon can be served in two ways:</p>
+                        <ul class="list-disc ml-6">
+                            <li><strong>Chewy:</strong> Cook for 4-5 minutes on each side for a total of 8-10 minutes.</li>
+                            <li><strong>Crispy:</strong> Cook for 6-7 minutes on each side for a total of 12-15 minutes.</li>
+                        </ul>
+                    </li>
+                    <li><strong class="font-bold">Eggs:</strong>
+                        <p>In this sandwich, eggs can be made in three different ways for this sandwich:</p>
+                        <ul class="list-disc ml-6">
+                            <li><strong>Scrambled:</strong> Scramble and mix the eggs until no white egg yolks are visible, cook until set, but still soft.</li>
+                            <li><strong>Sunny Side:</strong> Don't flip eggs, separate and let cook for another 2 minutes.</li>
+                            <li><strong>Over easy:</strong> Follow posted directions in the cooking section.</li>
+                        </ul>
+                    </li>
+                </ol>
+            </div>
+        </div>
+    
+        <h2 class="text-3xl font-bold text-gray-700 mt-8">Assembly</h2>
+        <div class="flex items-start gap-8">
+            <div class="w-1/2">
+                <ol class="list-decimal ml-6">
+                    <li><strong class="font-bold">Bread:</strong>
+                        <ol class="list-decimal ml-6">
+                            <li>Take the two pieces of bread.</li>
+                            <li>Take 1 tbsp of butter and split it in half.</li>
+                            <li>Using each half of the butter for each slice of bread, spread the butter on one side of the bread, for both pieces.</li>
+                        </ol>
+                    </li>
+                    <li><strong class="font-bold">Eggs:</strong>
+                        <p class="ml-6 mb-2">Take the eggs.</p>
+                        <p class="ml-6 mb-2">Take the bread.</p>
+                    </li>
+                    <li><strong class="font-bold">Bacon:</strong>
+                        <ol class="list-decimal ml-6">
+                            <li>For each piece of bread, put one egg on the butter side (as shown in figure 5).</li>
+                            <li>Take each piece of bacon and lay them on the eggs.</li>
+                        </ol>
+                        <p class="text-red-500 font-bold mt-4">WARNING: Hot food can cause burns, so use caution when handling hot ingredients and let them cool slightly before eating.</p>
+                    </li>
+                </ol>
+            </div>
+            <div class="w-1/2">
+                <img src="https://danilsidorov6138.github.io/images/figure5.jpg" alt="" class="w-full rounded-lg shadow-lg">
+            </div>
+        </div>
+    </div>
+</section>
+    
+    
+    
+</body>
+</html>

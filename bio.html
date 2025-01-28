@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Bio</title>
+</head>
+<body>
+    <div id="scrollToTop" class="fixed bottom-4 right-4 bg-blue-600 text-white w-12 h-12 rounded-full cursor-pointer shadow-lg hover:bg-blue-700 transition duration-300 flex items-center justify-center" onclick="scrollToTop()">
+        <span class="text-lg flex items-center justify-center h-full">↑</span>
+    </div>
+    
+    <script src="scrolltoTop.js"></script>
+    <header class="pb-6 bg-gray-100 lg:pb-0">
+        <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8 relative z-20">
+            <!-- lg+ -->
+            <nav class="flex items-center justify-between h-16 lg:h-20">
+                <div class="flex-shrink-0">
+                    <h1 class="text-2xl font-bold">About Me</h1>
+                </div>
+    
+              
+    
+                <div class="hidden lg:flex lg:items-center lg:ml-auto lg:space-x-10">
+                    <a href="index.html" title="" class="text-base font-medium text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600"> Home </a>
+    
+                    <a href="bio.html" title="" class="text-base font-medium text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600"> Bio </a>
+    
+                    <a href="resume.html" title="" class="text-base font-medium text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600"> Resume </a>
+
+                    <div class="relative">
+                        <button onclick="this.nextElementSibling.classList.toggle('hidden')" class="text-base font-medium text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600 flex items-center">
+                            Sample Works
+                            <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+                        <div class="absolute hidden w-48 bg-white border rounded-md shadow-lg mt-2 z-30">
+                            <a href="instruction.html" class="block px-4 py-2 text-sm text-black hover:bg-gray-100">Instruction Set</a>
+                            <a href="desc.html" class="block px-4 py-2 text-sm text-black hover:bg-gray-100">Technical Description</a>
+                            <a href="landingpage.html" class="block px-4 py-2 text-sm text-black hover:bg-gray-100">Redesigned Landing Page</a>
+                            <a href="paper.html" class="block px-4 py-2 text-sm text-black hover:bg-gray-100">Research Paper</a>
+                            <a href="reflection.html" class="block px-4 py-2 text-sm text-black hover:bg-gray-100">Reflection on Works</a>
+                        </div>
+                    </div>
+                </div>
+    
+            </nav>
+    
+            <!-- xs to lg -->
+            <nav class="pt-4 pb-6 bg-white border border-gray-200 rounded-md shadow-md lg:hidden">
+                <div class="flow-root">
+                    <div class="flex flex-col px-6 -my-2 space-y-1">
+                        <a href="index.html" title="" class="inline-flex py-2 text-base font-medium text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600"> Home </a>
+    
+                        <a href="bio.html" title="" class="inline-flex py-2 text-base font-medium text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600"> Bio </a>
+    
+                        <a href="resume.html" title="" class="inline-flex py-2 text-base font-medium text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600"> Resume </a>
+    
+                        <a href="instruction.html" title="" class="inline-flex py-2 text-base font-medium text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600"> Instruction Set </a>
+
+                        <a href="desc.html" title="" class="inline-flex py-2 text-base font-medium text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600"> Technical Description </a>
+
+                        <a href="landingpage.html" title="" class="inline-flex py-2 text-base font-medium text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600"> Redesigned Landing Page </a>
+                        
+                        <a href="paper.html" title="" class="inline-flex py-2 text-base font-medium text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600"> Research Paper </a>
+
+                        <a href="reflection.html" title="" class="inline-flex py-2 text-base font-medium text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600"> Reflection on Works </a>
+                    </div>
+                </div>
+    
+                <div class="px-6 mt-6">
+                </div>
+            </nav>
+        </div>
+    </header>
+
+
+    <section class="pt-10 overflow-hidden bg-gray-150 dark:bg-gray-800 md:pt-0 sm:pt-16 2xl:pt-16 relative z-10 pb-10">
+        <div class="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
+            <div class="">
+    
+                <div>
+                    <h2 class="text-3xl text-center font-bold leading-tight text-black dark:text-white sm:text-4xl lg:text-5xl pb-4">Hey 👋 I
+                        am
+                        <br class=" sm:hidden" />Danil Sidorov
+
+                    </h2>
+                    
+
+                    <p class="text-center mt-3 text-xl leading-relaxed text-gray-600 dark:text-gray-300 md:mt-8">
+                        I am a passionate computer scientist and programmer focused on web and app development. I am currently scheduled to begin working at Verizon as a Software Engineer in June 2025 after graduating from PSU with a Bachelor's Degree in Computer Science.
+                    </p>
+
+    
+           
+                    
+                    
+                </div>
+    
+               
+    
+            </div>
+        </div>
+    </section>
+
+
+    <section class="bg-gray-200 p-10  px-auto py-10 hover:text-blue-600 hover:scale-105 transform transition-all duration-200">
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col flex-1 gap-10 lg:gap-0 lg:flex-row lg:justify-between">
+            <div class="w-full lg:w-1/4 border-b pb-10 lg:border-b-0 lg:pb-0 lg:border-r border-gray-100">
+                <div id="stats-1" class="font-manrope font-bold text-5xl text-gray-900 mb-5 text-center">
+                    16 Years
+                </div>
+                <span id="stats-1-desc" class="text-xl text-gray-500 text-center block">of education</span>
+            </div>
+            <div class="w-full lg:w-1/4 border-b pb-10 lg:border-b-0 lg:pb-0 lg:border-r border-gray-100">
+                <div id="stats-2" class="font-manrope font-bold text-5xl text-gray-900 mb-5 text-center">
+                    3 Years
+                </div>
+                <span id="stats-2-desc" class="text-xl text-gray-500 text-center block">of work experience</span>
+            </div>
+            <div class="w-full lg:w-1/4 border-b pb-10 lg:border-b-0 lg:pb-0 lg:border-r border-gray-100">
+                <div id="stats-3" class="font-manrope font-bold text-5xl text-gray-900 mb-5 text-center">
+                    50+
+                </div>
+                <span id="stats-3-desc" class="text-xl text-gray-500 text-center block">projects completed</span>
+            </div>
+            <div class="w-full lg:w-1/4">
+                <div id="stats-4" class="font-manrope font-bold text-5xl text-gray-900 mb-5 text-center">
+                    3 Roles
+                </div>
+                <span id="stats-4-desc" class="text-xl text-gray-500 text-center block">at previous companies</span>
+            </div>
+        </div>
+        </div>
+    </section>
+    <section class="py-12 bg-white sm:py-16 lg:py-16">
+        <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+            <div class="text-center">
+                <h2 class="text-3xl font-bold leading-tight text-gray-900 sm:text-4xl xl:text-5xl font-pj">About Me</h2>
+            </div>
+    
+            <div class="grid grid-cols-1 mt-10 text-center sm:mt-16 sm:grid-cols-2 sm:gap-x-12 gap-y-12 md:grid-cols-3 md:gap-0 xl:mt-24">
+                <div class="md:p-8 lg:p-14 hover:bg-gray-100 transition duration-200">
+                    <svg class="mx-auto" width="46" height="46" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M45 29V23C45 10.85 35.15 1 23 1C10.85 1 1 10.85 1 23V29" stroke="#161616" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M13 29H1V41C1 43.209 2.791 45 5 45H13V29Z" fill="#D4D4D8" stroke="#161616" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M45 29H33V45H41C43.209 45 45 43.209 45 41V29Z" fill="#D4D4D8" stroke="#161616" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                    <h3 class="mt-12 text-xl font-bold text-gray-900 font-pj">Web Development</h3>
+                    <p class="mt-5 text-base text-gray-600 font-pj">I specialize in building dynamic web applications using React, ensuring a seamless user experience through modern, responsive design.</p>
+                </div>
+    
+                <div class="md:p-8 lg:p-14 md:border-l md:border-gray-200 hover:bg-gray-100 transition duration-200">
+                    <svg class="mx-auto" width="46" height="46" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M27 27H19V45H27V27Z" stroke="#161616" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M9 37H1V45H9V37Z" fill="#D4D4D8" stroke="#161616" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M45 17H37V45H45V17Z" fill="#D4D4D8" stroke="#161616" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M5 17L15 7L23 15L37 1" stroke="#161616" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M28 1H37V10" stroke="#161616" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                    <h3 class="mt-12 text-xl font-bold text-gray-900 font-pj">App Development</h3>
+                    <p class="mt-5 text-base text-gray-600 font-pj">I bring apps to life using Python, optimizing performance and ensuring that users experience intuitive, effective mobile solutions.</p>
+                </div>
+    
+                <div class="md:p-8 lg:p-14 md:border-l md:border-gray-200 hover:bg-gray-100 transition duration-200">
+                    <svg class="mx-auto" width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M41 1H1V41H41V1Z" stroke="#161616" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M18 7H7V20H18V7Z" stroke="#161616" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M18 26H7V35H18V26Z" stroke="#161616" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M35 7H24V35H35V7Z" fill="#D4D4D8" stroke="#161616" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                    <h3 class="mt-12 text-xl font-bold text-gray-900 font-pj">Customer Service</h3>
+                    <p class="mt-5 text-base text-gray-600 font-pj">My customer service experience at Verizon has honed my communication and problem-solving skills, which directly translate to creating solutions that meet client needs.</p>
+                </div>
+    
+                <div class="md:p-8 lg:p-14 md:border-t md:border-gray-200 hover:bg-gray-100 transition duration-200">
+                    <svg class="mx-auto" width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M9.66667 25H6C3.23858 25 1 27.2386 1 30V37C1 39.7614 3.23858 42 6 42H36C38.7614 42 41 39.7614 41 37V30C41 27.2386 38.7614 25 36 25H31.8333C30.2685 25 29 26.2685 29 27.8333C29 29.3981 27.7315 30.6667 26.1667 30.6667H15.3333C13.7685 30.6667 12.5 29.3981 12.5 27.8333C12.5 26.2685 11.2315 25 9.66667 25Z"
+                            fill="#D4D4D8"
+                        />
+                        <path d="M9 9H33" stroke="#161616" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M9 17H33" stroke="#161616" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M1 25H13V31H29V25H41" stroke="#161616" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M37 1H5C2.79086 1 1 2.79086 1 5V37C1 39.2091 2.79086 41 5 41H37C39.2091 41 41 39.2091 41 37V5C41 2.79086 39.2091 1 37 1Z" stroke="#161616" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                    <h3 class="mt-12 text-xl font-bold text-gray-900 font-pj">Quality Focused</h3>
+                    <p class="mt-5 text-base text-gray-600 font-pj">I always prioritize quality in my development, ensuring that each project I work on meets the highest standards of usability, functionality, and performance.</p>
+                </div>
+    
+                <div class="md:p-8 lg:p-14 md:border-l md:border-gray-200 md:border-t hover:bg-gray-100 transition duration-200">
+                    <svg class="mx-auto" width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M25 7C34.941 7 43 15.059 43 25C43 34.941 34.941 43 25 43C15.059 43 7 34.941 7 25" stroke="#161616" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M19 1C9.059 1 1 9.059 1 19H19V1Z" fill="#D4D4D8" stroke="#161616" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                    <h3 class="mt-12 text-xl font-bold text-gray-900 font-pj">Continuous Learning</h3>
+                    <p class="mt-5 text-base text-gray-600 font-pj">I am committed to constant growth, exploring new technologies and frameworks, and continuously pushing my boundaries to be the best developer I can be.</p>
+                </div>
+                <div class="md:p-8 lg:p-14 md:border-l md:border-gray-200 md:border-t hover:bg-gray-100 transition duration-200">
+                    <svg class="mx-auto" width="46" height="42" viewBox="0 0 46 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M30.562 18.4609C30.0511 17.9392 29.4292 17.5392 28.7426 17.2907C28.0559 17.0422 27.3221 16.9516 26.5956 17.0256C25.8692 17.0996 25.1687 17.3362 24.5462 17.718C23.9237 18.0998 23.3952 18.6169 23 19.2309C22.6049 18.6167 22.0764 18.0995 21.4539 17.7176C20.8315 17.3357 20.1309 17.099 19.4044 17.025C18.6779 16.951 17.944 17.0417 17.2573 17.2903C16.5706 17.5389 15.9488 17.939 15.438 18.4609C14.5163 19.4035 14.0002 20.6695 14.0002 21.9879C14.0002 23.3063 14.5163 24.5722 15.438 25.5149L23 33.1999L30.564 25.5159C31.485 24.5726 32.0004 23.3064 32 21.988C31.9997 20.6696 31.4835 19.4037 30.562 18.4609Z"
+                            fill="#D4D4D8"
+                            stroke="#161616"
+                            stroke-width="2"
+                            stroke-miterlimit="10"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                        />
+                        <path
+                            d="M41 41H5C3.93913 41 2.92172 40.5786 2.17157 39.8284C1.42143 39.0783 1 38.0609 1 37V1H17L22 9H45V37C45 38.0609 44.5786 39.0783 43.8284 39.8284C43.0783 40.5786 42.0609 41 41 41Z"
+                            stroke="#161616"
+                            stroke-width="2"
+                            stroke-miterlimit="10"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                        />
+                    </svg>
+                    <h3 class="mt-12 text-xl font-bold text-gray-900 font-pj">Problem Solving & Innovation</h3>
+                    <p class="mt-5 text-base text-gray-600 font-pj">I thrive on challenges and excel at finding innovative solutions to complex problems. My ability to approach issues creatively, combined with my technical expertise, allows me to deliver efficient and effective solutions in both web and app development.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+ 
+    
+
+
+    <!-- <section class="py-10 bg-gray-50 sm:pt-16 lg:pt-24">
+        <div class="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
+            <div class="grid grid-cols-2 md:col-span-3 lg:grid-cols-6 gap-y-16 gap-x-12">
+                <div class="col-span-2 md:col-span-3 lg:col-span-2 lg:pr-8">
+                    <h1 class="text-2xl font-bold">Danil Sidorov's E-Portfolio</h1>
+    
+    
+                       
+                </div>
+    
+                <div class="col-span-2 md:col-span-3 lg:col-span-4">
+                    <div class="grid grid-cols-1 gap-y-16 gap-x-12 lg:grid-cols-7">
+                        <a href="index.html" title="" class="text-base font-medium text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600">Home</a>
+                        <a href="bio.html" title="" class="text-base font-medium text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600">Bio</a>
+                        <a href="resume.html" title="" class="text-base font-medium text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600">Resume</a>
+                        <a href="instruction.html" title="" class="text-base font-medium text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600">Instruction Set</a>
+                        <a href="desc.html" title="" class="text-base font-medium text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600">Technical Description</a>
+                        <a href="works.html" title="" class="text-base font-medium text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600">Works</a>
+                        <a href="reflection.html" title="" class="text-base font-medium text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600">Reflection on Works</a>
+                    </div>
+                </div>
+            </div>
+    
+            <hr class="mt-16 mb-10 border-gray-200" />
+    
+            <p class="text-sm text-center text-gray-600">© Copyright 2024, All Rights Reserved</p>
+        </div>
+    </section> -->
+    
+    
+    
+</body>
+</html>

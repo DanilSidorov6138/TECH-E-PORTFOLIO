@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Bio</title>
+    
+</head>
+<body>
+    <div id="scrollToTop" class="fixed bottom-4 right-4 bg-blue-600 text-white w-12 h-12 rounded-full cursor-pointer shadow-lg hover:bg-blue-700 transition duration-300 flex items-center justify-center" onclick="scrollToTop()">
+        <span class="text-lg flex items-center justify-center h-full">↑</span>
+    </div>
+    
+    <script src="scrolltoTop.js"></script>
+   <!-- First Header -->
+   <header id="firstheader" class="pb-6 bg-gray-100 lg:pb-0">
+    <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+        <!-- lg+ -->
+        <nav class="flex items-center justify-between h-16 lg:h-20">
+            <div class="flex-shrink-0">
+                <h1 class="text-2xl font-bold">Landing Page</h1>
+            </div>
+
+
+
+            <div class="hidden lg:flex lg:items-center lg:ml-auto lg:space-x-10">
+                <a href="index.html" title=""
+                    class="text-base font-medium text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600">
+                    Home </a>
+
+                <a href="bio.html" title=""
+                    class="text-base font-medium text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600">
+                    Bio </a>
+
+                <a href="resume.html" title=""
+                    class="text-base font-medium text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600">
+                    Resume </a>
+
+                <div class="relative">
+                    <button onclick="this.nextElementSibling.classList.toggle('hidden')"
+                        class="text-base font-medium text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600 flex items-center">
+                        Sample Works
+                        <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </button>
+                    <div class="absolute hidden w-48 bg-white border rounded-md shadow-lg mt-2 z-50">
+                        <a href="instruction.html"
+                            class="block px-4 py-2 text-sm text-black hover:bg-gray-100">Instruction Set</a>
+                        <a href="desc.html" class="block px-4 py-2 text-sm text-black hover:bg-gray-100">Technical
+                            Description</a>
+                        <a href="landingpage.html"
+                            class="block px-4 py-2 text-sm text-black hover:bg-gray-100">Redesigned Landing Page</a>
+                        <a href="paper.html" class="block px-4 py-2 text-sm text-black hover:bg-gray-100">Research
+                            Paper</a>
+                        <a href="reflection.html"
+                            class="block px-4 py-2 text-sm text-black hover:bg-gray-100">Reflection on Works</a>
+                    </div>
+                </div>
+            </div>
+
+        </nav>
+
+        <!-- xs to lg -->
+        <nav class="pt-4 pb-6 bg-white border border-gray-200 rounded-md shadow-md lg:hidden">
+            <div class="flow-root">
+                <div class="flex flex-col px-6 -my-2 space-y-1">
+                    <a href="index.html" title=""
+                        class="inline-flex py-2 text-base font-medium text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600">
+                        Home </a>
+
+                    <a href="bio.html" title=""
+                        class="inline-flex py-2 text-base font-medium text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600">
+                        Bio </a>
+
+                    <a href="resume.html" title=""
+                        class="inline-flex py-2 text-base font-medium text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600">
+                        Resume </a>
+
+                    <a href="instruction.html" title=""
+                        class="inline-flex py-2 text-base font-medium text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600">
+                        Instruction Set </a>
+
+                    <a href="desc.html" title=""
+                        class="inline-flex py-2 text-base font-medium text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600">
+                        Technical Description </a>
+
+                    <a href="landingpage.html" title=""
+                        class="inline-flex py-2 text-base font-medium text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600">
+                        Redesigned Landing Page </a>
+
+                    <a href="paper.html" title=""
+                        class="inline-flex py-2 text-base font-medium text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600">
+                        Research Paper </a>
+
+                    <a href="reflection.html" title=""
+                        class="inline-flex py-2 text-base font-medium text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600">
+                        Reflection on Works </a>
+                </div>
+            </div>
+
+            <div class="px-6 mt-6">
+            </div>
+        </nav>
+    </div>
+</header>
+
+<style>
+    @font-face {
+        font-family: "NORMAL";
+        src: url("./assets/fonts/MuseoSansRegular.woff"), format("truetype");
+    }
+
+    @font-face {
+        font-family: "BOLD";
+        src: url("./assets/fonts/MuseoSansBold.woff"), format("truetype");
+        font-weight: bold;
+    }
+
+    html {
+        scroll-behavior: smooth;
+    }
+
+    body {
+        font-family: "NORMAL", "BOLD", sans-serif;
+
+    }
+    #firstheader {
+        font-family: ui-sans-serif, system-ui, sans-serif;
+
+    }
+</style>
+
+<!-- Second Header -->
+<header x-data="{ navbarOpen: false, dropdownOpen: false }"
+        class="sticky top-0 left-0 w-full px-4 py-2 sm:px-6 sm:py-4 bg-white shadow-lg z-20">
+        <div class="container mx-auto">
+            <div class="flex items-center justify-between -mx-4">
+                <!-- Logo Section -->
+                <div class="flex max-w-full px-4 w-60">
+                    <a class="flex items-center w-full py-5 rounded-lg">
+                        <img src="https://danilsidorov6138.github.io/images/assets/logo/download.png" alt="logo" class="w-16 h-16 mr-4" />
+                        <h1 class="text-lg font-semibold text-gray-800">Polar Express</h1>
+                    </a>
+                </div>
+
+                <!-- Button for toggling menu on mobile screens -->
+                <div class="flex items-center justify-end w-full px-4">
+                    <div>
+                        <!-- Button should be visible on mobile, hidden on large screens -->
+                        <button @click="navbarOpen = !navbarOpen" id="navbarToggler"
+                            class="lg:hidden absolute hover:drop-shadow-xl right-4 top-1/2 -translate-y-1/2 block bg-gray-300 text-black rounded-lg px-3 py-[6px] ring-primary focus:ring-2">
+                            <!-- Hamburger Icon -->
+                            <span class="block relative h-[2px] w-[30px] bg-white my-[6px]"></span>
+                            <span class="block relative h-[2px] w-[30px] bg-white my-[6px]"></span>
+                            <span class="block relative h-[2px] w-[30px] bg-white my-[6px]"></span>
+                        </button>
+
+                        <!-- Navigation Menu -->
+                        <nav :class="navbarOpen ? 'block bg-gray-200' : 'hidden'" id="navbarCollapse"
+                            class="lg:block absolute lg:static right-4 top-full w-full rounded-lg py-5 px-6 shadow transition-all lg:bg-transparent lg:shadow-none lg:w-full">
+                            <ul class="block lg:flex lg:justify-end">
+                                <li>
+                                    <a href="javascript:void(0)" id="home-link" 
+                                    onClick="window.scrollTo({top: document.getElementById('hero').getBoundingClientRect().top + window.scrollY - 100, behavior: 'smooth'});"
+                                        class="flex hover:bg-gray-400 py-2 px-4 text-base font-medium text-dark hover:text-primary lg:ml-10 lg:inline-flex rounded-lg">
+                                        Home
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)" id="shops-link"
+                                        onClick="window.scrollTo({top: document.getElementById('shops').getBoundingClientRect().top + window.scrollY - 100, behavior: 'smooth'});"
+                                        class="flex hover:bg-gray-400 py-2 px-4 text-base font-medium text-dark hover:text-primary lg:ml-10 lg:inline-flex rounded-lg">
+                                        Shops
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="javascript:void(0)" id="hiw-link"
+                                        onClick="window.scrollTo({top: document.getElementById('hiw').getBoundingClientRect().top + window.scrollY - 100, behavior: 'smooth'});"
+                                        class="flex hover:bg-gray-400 py-2 px-4 text-base font-medium text-dark hover:text-primary lg:ml-10 lg:inline-flex rounded-lg">
+                                        How It Works
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)" id="products-link"
+                                        onClick="window.scrollTo({top: document.getElementById('products').getBoundingClientRect().top + window.scrollY - 100, behavior: 'smooth'});"
+                                        class="flex hover:bg-gray-400 py-2 px-4 text-base font-medium text-dark hover:text-primary lg:ml-10 lg:inline-flex rounded-lg">
+                                        Products
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+
+
+
+
+<div id="hero" class="relative pb-[110px] pt-[75px] sm:pb-[120px] md:pb-[130px] lg:pb-[140px] z-10">
+    <div class="container mx-auto">
+        <div class="flex flex-wrap items-center mx-4 flex-col lg:flex-row">
+            <div class="w-full px-4 lg:w-5/12">
+                <div class="hero-content">
+                    <div class="flex flex-col items-center w-full">
+                        <!-- Added w-full to ensure it takes full width -->
+                        <h1 id="hero_description" class="mb-5 text-6xl font-black text-center drop-shadow-lg hover:text-blue-500 hover:drop-shadow-xl hover:font-bold">
+                            Polar Express is now in the United Arab Emirates<br />
+                        </h1>
+                        <p id="hero_content" class="mb-8 text-xl text-center text-base text-body-color max-w-md">
+                            Shop Online: Get a Virtual Address in the United Arab Emirates today!
+                        </p>
+                        <a>
+                            <button id="hero_button"
+                                class="flex items-center justify-center px-6 py-3 text-base font-medium text-white rounded-md bg-primary bg-blue-700 hover:bg-violet-600 lg:px-15 transform transition-transform hover:translate-y-[-5px]">
+                                Get a Free Virtual Address in the United Arab Emirates
+                            </button>
+                        </a>
+                    </div>
+
+
+
+
+
+                </div>
+            </div>
+            <div class="hidden px-4 lg:block lg:w-1/12"></div>
+            <div class="w-full px-4 lg:w-6/12">
+                <div class="lg:ml-auto lg:text-right">
+                    <div class="relative  inline-block pt-11 lg:pt-0 ">
+                        <img src="https://danilsidorov6138.github.io/images/BackGround.jpeg" alt="hero"
+                            class="max-w-full lg:ml-auto rounded-bl-lg rounded-full" />
+                        <div
+                            class="absolute -left-8 -bottom-8 z-[-1] w-full h-full flex items-center justify-center">
+                            <div class="absolute inset-0 rounded-full bg-gray-900 opacity-30 shadow-lg"
+                                style="filter: blur(30px);"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<section class="bg-gray-200 p-10 hover:shadow-lg px-auto ">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8"></div>
+    <div class="flex flex-col flex-1 gap-10 lg:gap-0 lg:flex-row lg:justify-between">
+        <div class="w-full lg:w-1/4 border-b pb-10 lg:border-b-0 lg:pb-0 lg:border-r border-gray-100">
+            <div id="stats-1" class="font-manrope font-bold text-5xl text-gray-900 mb-5 text-center">
+                27 Years
+            </div>
+            <span id="stats-1-desc" class="text-xl text-gray-500 text-center block">in the Industry</span>
+        </div>
+        <div class="w-full lg:w-1/4 border-b pb-10 lg:border-b-0 lg:pb-0 lg:border-r border-gray-100">
+            <div id="stats-2" class="font-manrope font-bold text-5xl text-gray-900 mb-5 text-center">
+                620 Tons
+            </div>
+            <span id="stats-2-desc" class="text-xl text-gray-500 text-center block">of Cargo delivered in 2022</span>
+        </div>
+        <div class="w-full lg:w-1/4 border-b pb-10 lg:border-b-0 lg:pb-0 lg:border-r border-gray-100">
+            <div id="stats-3" class="font-manrope font-bold text-5xl text-gray-900 mb-5 text-center">
+                250 k.
+            </div>
+            <span id="stats-3-desc" class="text-xl text-gray-500 text-center block">Packages delivered in 2022</span>
+        </div>
+        <div class="w-full lg:w-1/4">
+            <div id="stats-4" class="font-manrope font-bold text-5xl text-gray-900 mb-5 text-center">
+                150 k.
+            </div>
+            <span id="stats-4-desc" class="text-xl text-gray-500 text-center block">Regular customers</span>
+        </div>
+    </div>
+    </div>
+</section>
+</div>
+</div>
+</div>
+</section>
+
+<section id="shops" class="py-24">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 cursor-pointer">
+        <div class="mb-20 text-center">
+            <span id="shops1_text" class="text-indigo-600 text-center font-medium mb-4 block">Shops</span>
+            <h1 id="shops_description" class="text-4xl text-gray-900 text-center font-bold">We only work with the best stores</h1>
+        </div>
+        <div class="grid grid-cols-1 gap-8 md:grid-cols-2 xl:grid-cols-4">
+            <div class="flex justify-center items-center border border-solid border-gray-200 hover:shadow-lg h-24 rounded-2xl">
+                <img src="https://danilsidorov6138.github.io/images/Amazon.jpg" class="h-full w-full object-cover rounded-2xl" />
+            </div>
+            <div class="flex justify-center items-center border border-solid border-gray-200 hover:shadow-lg h-24 rounded-2xl">
+                <img src="https://danilsidorov6138.github.io/images/DC.png" class="h-full w-full object-contain rounded-2xl" />
+            </div>
+            <div class="flex justify-center items-center border border-solid border-gray-200 hover:shadow-lg h-24 rounded-2xl">
+                <img src="https://danilsidorov6138.github.io/images/HandM.png" class="h-full w-full object-contain rounded-2xl" />
+            </div>
+            <div class="flex justify-center items-center border border-solid border-gray-200 hover:shadow-lg h-24 rounded-2xl">
+                <img src="https://danilsidorov6138.github.io/images/BathandBodyWorks.png" class="h-full w-full object-contain rounded-2xl" />
+            </div>
+            <div class="flex justify-center items-center border border-solid border-gray-200 hover:shadow-lg h-24 rounded-2xl">
+                <img src="https://danilsidorov6138.github.io/images/DayToDay.png" class="h-full w-full object-contain rounded-2xl" />
+            </div>
+            <div class="flex justify-center items-center border border-solid border-gray-200 hover:shadow-lg h-24 rounded-2xl">
+                <img src="https://danilsidorov6138.github.io/images/Temu.jpg" class="h-full w-full object-contain rounded-2xl" />
+            </div>
+            <div class="flex justify-center items-center border border-solid border-gray-200 hover:shadow-lg h-24 rounded-2xl">
+                <img src="https://danilsidorov6138.github.io/images/Gap.png" class="h-full w-full object-contain rounded-2xl" />
+            </div>
+            <div class="flex justify-center items-center border border-solid border-gray-200 hover:shadow-lg h-24 rounded-2xl">
+                <img src="https://danilsidorov6138.github.io/images/Jumbo.png" class="h-full w-full object-contain rounded-2xl" />
+            </div>
+            <div class="flex justify-center items-center border border-solid border-gray-200 hover:shadow-lg h-24 rounded-2xl">
+                <img src="https://danilsidorov6138.github.io/images/MumzWorld.webp" class="h-full w-full object-contain rounded-2xl" />
+            </div>
+            <div class="flex justify-center items-center border border-solid border-gray-200 hover:shadow-lg h-24 rounded-2xl">
+                <img src="https://danilsidorov6138.github.io/images/Namshi.png" class="h-full w-full object-cover rounded-2xl" />
+            </div>
+            <div class="flex justify-center items-center border border-solid border-gray-200 hover:shadow-lg h-24 rounded-2xl">
+                <img src="https://danilsidorov6138.github.io/images/Nike.jpg" class="h-full w-full object-cover rounded-2xl" />
+            </div>
+            <div class="flex justify-center items-center border border-solid border-gray-200 hover:shadow-lg h-24 rounded-2xl">
+                <img src="https://danilsidorov6138.github.io/images/Sivvi.webp" class="h-full w-full object-cover rounded-2xl" />
+            </div>
+            <div class="flex justify-center items-center border border-solid border-gray-200 hover:shadow-lg h-24 rounded-2xl">
+                <img src="https://danilsidorov6138.github.io/images/Ounass.jpg" class="h-full w-full object-cover rounded-2xl" />
+            </div>
+            <div class="flex justify-center items-center border border-solid border-gray-200 hover:shadow-lg h-24 rounded-2xl">
+                <img src="https://danilsidorov6138.github.io/images/Noon.png" class="h-full w-full object-cover rounded-2xl" />
+            </div>
+            <div class="flex justify-center items-center border border-solid border-gray-200 hover:shadow-lg h-24 rounded-2xl">
+                <img src="https://danilsidorov6138.github.io/images/SixthStreet.jpg" class="h-full w-full object-contain rounded-2xl" />
+            </div>
+            <div class="flex justify-center items-center border border-solid border-gray-200 hover:shadow-lg h-24 rounded-2xl">
+                <img src="https://danilsidorov6138.github.io/images/Doduae.png" class="h-full w-full object-cover rounded-2xl" />
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ====== Brands Section End -->
+
+<!-- ====== Services Section Start -->
+<section id="hiw" class="bg-gray-200 pt-20 cursor-pointer p-5">
+    <div class="px-10">
+        <div class="-mx-4 flex flex-wrap justify-center">
+            <div class="w-full px-4">
+                <div class="mx-auto mb-12 max-w-[510px] text-center lg:mb-20">
+                    <h2 id="hiw_text" class="text-dark mb-3 text-3xl leading-[1.2] font-bold sm:text-4xl md:text-[40px]">
+                        How It Works
+                    </h2>
+                </div>
+            </div>
+        </div>
+        <div class="-mx-4 flex flex-wrap justify-center gap-y-10">
+            <!-- Step 1 -->
+            <div class="w-full px-4 md:w-1/2 lg:w-1/3">
+                <div class="mb-9 rounded-[20px] bg-white p-10 shadow-6 hover:shadow-lg md:px-7 xl:px-10 h-full flex flex-col">
+                    <div class="bg-primary mb-8 flex h-[150px] w-[150px] items-center justify-center rounded-2xl mx-auto">
+                        <img src="https://danilsidorov6138.github.io/images/InformationOne.png" alt="image" class="h-full w-full" />
+                    </div>
+                    <h4 class="text-dark mb-[14px] text-2xl font-bold">
+                        Step 1: Account Registration:
+                    </h4>
+                    <p class="text-body-color ">
+                        Start by registering on our website. Fill in your details to create a new account, or log in to an existing one. Registering gives you access to our warehouses in Dubai, the USA, and Canada.
+                    </p>
+                    <h4 class="text-dark mb-[14px] text-2xl font-semibold pt-5">
+                        Getting a personal address in the UAE:
+                    </h4>
+                    <p class="text-body-color">
+                        After registration, you will receive a unique delivery address in the UAE, which can be used for your shopping.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Step 2 -->
+            <div class="w-full px-4 md:w-1/2 lg:w-1/3">
+                <div class="mb-9 rounded-[20px] bg-white p-10 shadow-2 hover:shadow-lg md:px-7 xl:px-10 h-full flex flex-col">
+                    <div class="bg-primary mb-8 flex h-[150px] w-[150px] items-center justify-center rounded-2xl mx-auto">
+                        <img src="https://danilsidorov6138.github.io/images/InformationTwo.png" alt="image" class="h-full w-full" />
+                    </div>
+                    <h4 class="text-dark mb-[14px] text-2xl font-semibold">
+                        Step 2: Shop at any UAE store
+                    </h4>
+                    <h4 class="text-dark mb-[14px] text-2xl font-semibold pt-5">
+                        Enter your unique UAE address at checkout:
+                    </h4>
+                    <p class="text-body-color ">
+                        When placing an order, use the unique UAE address provided by us. The store will ship your order to this address, and you can then add it to your waiting list in your personal account on our website.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Step 3 -->
+            <div class="w-full px-4 md:w-1/2 lg:w-1/3">
+                <div class="mb-9 rounded-[20px] bg-white p-10 shadow-2 hover:shadow-lg md:px-7 xl:px-10 h-full flex flex-col">
+                    <div class="bg-primary mb-8 flex h-[150px] w-[150px] items-center justify-center rounded-2xl mx-auto">
+                        <img src="https://danilsidorov6138.github.io/images/Information3.png" alt="image" class="h-full w-full" />
+                    </div>
+                    <h4 class="text-dark mb-[14px] text-2xl font-semibold">
+                        Step 3: Arrival of the package:
+                    </h4>
+                    <p class="text-body-color">
+                        Once your order is received at the warehouse, you will be notified via your registered email address.
+                    </p>
+                    <h4 class="text-dark mb-[14px] text-2xl font-semibold pt-5">
+                        Inspection of the package:
+                    </h4>
+                    <p class="text-body-color">
+                        Our staff will verify the package to ensure the goods are present and match the details in the customs declaration.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Step 4 -->
+            <div class="w-full px-4 md:w-1/2 lg:w-1/3">
+                <div class="mb-9 rounded-[20px] bg-white p-10 shadow-2 hover:shadow-lg md:px-7 xl:px-10 h-full flex flex-col">
+                    <div class="bg-primary mb-8 flex h-[150px] w-[150px] items-center justify-center rounded-2xl mx-auto">
+                        <img src="https://danilsidorov6138.github.io/images/Information4.png" alt="image" class="h-full w-full" />
+                    </div>
+                    <h4 class="text-dark mb-[14px] text-2xl font-semibold">
+                        Step 4: Shipping:
+                    </h4>
+                    <p class="text-body-color ">
+                        Once the shipping invoice is paid, the package will be dispatched to the destination address.
+                    </p>
+                    <h4 class="text-dark mb-[14px] text-2xl font-semibold pt-5">
+                        Tracking:
+                    </h4>
+                    <p class="text-body-color">
+                        Each package is assigned a unique tracking number to track its progress at every stage of transit, until it is delivered to the recipient.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Step 5 -->
+            <div class="w-full px-4 md:w-1/2 lg:w-1/3">
+                <div class="mb-9 rounded-[20px] bg-white p-10 shadow-2 hover:shadow-lg md:px-7 xl:px-10 h-full flex flex-col">
+                    <div class="bg-primary mb-8 flex h-[150px] w-[150px] items-center justify-center rounded-2xl mx-auto">
+                        <img src="https://danilsidorov6138.github.io/images/InformationFive.png" alt="image" class="h-full w-full" />
+                    </div>
+                    <h4 class="text-dark mb-[14px] text-2xl font-semibold">
+                        Step 5: Delivery:
+                    </h4>
+                    <p class="text-body-color">
+                        The package will be delivered to the specified destination address by EMS courier, directly to your door. Delivery times vary based on the destination country and recipient's address.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="py-12 sm:py-16 lg:py-20" id="products">
+    <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+        <!-- Banner Section -->
+        <div class="text-center bg-gray-200 text-white py-12 px-4 rounded-lg hover:shadow-lg">
+            <div class="max-w-3xl mx-auto">
+                <!-- Header -->
+                <h2 class="text-3xl font-semibold sm:text-4xl mb-4 text-gray-900">Available goods from UAE</h2>
+                <!-- Main Text -->
+                <p class="text-lg sm:text-xl font-normal leading-relaxed text-gray-900">
+                    Discover impeccable shopping with our new warehouse in Dubai! Get access to exclusive goods in the UAE, including electronics, luxury items, and many other things that are prohibited to ship from the USA.
+                </p>
+            </div>
+        </div>
+
+        <div
+            class="grid max-w-6xl grid-cols-1 px-20 mx-auto mt-12 text-center sm:px-0 sm:grid-cols-2 md:mt-20 gap-x-8 md:grid-cols-4 gap-y-12 lg:gap-x-16 xl:gap-x-20">
+            <div>
+                <img class="object-cover w-[150px] h-[150px] mx-auto rounded-lg lg:w-[250px] lg:h-[250px]"
+                    src="https://danilsidorov6138.github.io/images/Iphone.jpg" alt="Camera" />
+                <p id="phones" class="mt-5 text-lg font-bold text-gray-900 sm:text-xl sm:mt-8 font-pj">Mobile Phones
+                <p id="phones_desc" class="mt-2 text-base font-normal text-gray-600 font-pj">Affordable phones for every budget.
+                </p>
+            </div>
+
+            <div>
+                <img class="object-cover w-[150px] h-[150px] mx-auto rounded-lg lg:w-[250px] lg:h-[250px]"
+                    src="https://danilsidorov6138.github.io/images/Handbag.jpg" alt="Makeup" />
+                <p id="handbads" class="mt-5 text-lg font-bold text-gray-900 sm:text-xl sm:mt-8 font-pj">Bags & Accessories
+                <p id="handbags_desc" class="mt-2 text-base font-normal text-gray-600 font-pj">Elegant bags and luxury accessories.
+                </p>
+            </div>
+
+            <div>
+                <img class="object-cover w-[150px] h-[150px] mx-auto rounded-lg lg:w-[250px] lg:h-[250px]"
+                    src="https://danilsidorov6138.github.io/images/Glasses.jpg" alt="Other" />
+                <p id="glasses" class="mt-5 text-lg font-bold text-gray-900 sm:text-xl sm:mt-8 font-pj">Sunglasses
+                <p id="glasses_desc" class="mt-2 text-base font-normal text-gray-600 font-pj">Stylish sunglasses from top brands.
+                </p>
+            </div>
+
+            <div>
+                <img class="object-cover w-[150px] h-[150px] mx-auto rounded-lg lg:w-[250px] lg:h-[250px]"
+                    src="https://danilsidorov6138.github.io/images/power-tool.jpg" alt="Another" />
+                <p id="tools" class="mt-5 text-lg font-bold text-gray-900 sm:text-xl sm:mt-8 font-pj">Power Tools
+                <p id="tools_desc" class="mt-2 text-base font-normal text-gray-600 font-pj">High-quality power tools for every job.
+                </p>
+                </p>
+            </div>
+
+            <div>
+                <img class="object-cover w-[150px] h-[150px] mx-auto rounded-lg lg:w-[250px] lg:h-[250px]"
+                    src="https://danilsidorov6138.github.io/images/Computer.webp" alt="Camera" />
+                <p id="computers" class="mt-5 text-lg font-bold text-gray-900 sm:text-xl sm:mt-8 font-pj">Computers & Accessories
+                </p>
+                <p id="computers_desc" class="mt-2 text-base font-normal text-gray-600 font-pj">Laptops, desktops, and components.
+                </p>
+            </div>
+
+            <div>
+                <img class="object-cover w-[150px] h-[150px] mx-auto rounded-lg lg:w-[250px] lg:h-[250px]"
+                    src="https://danilsidorov6138.github.io/images/Makeup.webp" alt="Makeup" />
+                <p id="makeup" class="mt-5 text-lg font-bold text-gray-900 sm:text-xl sm:mt-8 font-pj">Beauty Products
+                <p id="makeup_desc" class="mt-2 text-base font-normal text-gray-600 font-pj">Top-quality makeup and beauty essentials.
+                </p>
+            </div>
+
+            <div>
+                <img class="object-cover w-[150px] h-[150px] mx-auto rounded-lg lg:w-[250px] lg:h-[250px]"
+                    src="https://danilsidorov6138.github.io/images/Camera.jpg" alt="Other" />
+                <p id="cameras" class="mt-5 text-lg font-bold text-gray-900 sm:text-xl sm:mt-8 font-pj">Cameras & Photography
+                <p id="cameras_desc" class="mt-2 text-base font-normal text-gray-600 font-pj">High-performance cameras and gear for every photographer.
+                </p>
+            </div>
+
+            <div>
+                <img class="object-cover w-[150px] h-[150px] mx-auto rounded-lg lg:w-[250px] lg:h-[250px]"
+                    src="https://danilsidorov6138.github.io/images/Sports.avif" alt="Another" />
+                <p id="sports" class="mt-5 text-lg font-bold text-gray-900 sm:text-xl sm:mt-8 font-pj">Sports Equipment
+                <p id="sports_desc" class="mt-2 text-base font-normal text-gray-600 font-pj">Gear and equipment for all your sports activities.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+<script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+
+<footer class="w-full py-14 bg-gray-100 ">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 ">
+        <div class="max-w-3xl mx-auto">
+            <hr>
+            <ul
+                class="text-lg flex items-center justify-center flex-col gap-7 md:flex-row md:gap-5 transition-all duration-500 py-10 mb-4 border-b border-gray-200">
+                <li class="flex items-center">
+                    <a href="#" class="text-gray-800 hover:text-gray-900 mx-auto flex items-center">
+                        Polar Express
+                    </a>
+                </li>
+                <li><a id="home-link2" href="javascript:void(0)"
+                    onClick="window.scrollTo({top: document.getElementById('hero').getBoundingClientRect().top + window.scrollY - 100, behavior: 'smooth'});"
+
+                     class=" text-gray-800 hover:text-gray-900">Home</a></li>
+                <li><a id="shops-link2" 
+                    onClick="window.scrollTo({top: document.getElementById('shops').getBoundingClientRect().top + window.scrollY - 100, behavior: 'smooth'});"
+
+                    href="javascript:void(0)" class=" text-gray-800 hover:text-gray-900">Shops</a></li>
+                <li><a id="hiw-link2" 
+                    onClick="window.scrollTo({top: document.getElementById('hiw').getBoundingClientRect().top + window.scrollY - 100, behavior: 'smooth'});"
+
+                    href="javascript:void(0)" class=" text-gray-800 hover:text-gray-900">How it Works</a></li>
+                <li><a id="products-link2" onClick="window.scrollTo({top: document.getElementById('products').getBoundingClientRect().top + window.scrollY - 100, behavior: 'smooth'});"
+
+                    href="javascript:void(0)" class=" text-gray-800 hover:text-gray-900">Products</a>
+                </li>
+            </ul>
+            <span class="text-lg text-gray-500 text-center block">©<a>ПЭ 2024</a> All
+                rights reserved.</span>
+        </div>
+    </div>
+</footer>
+
+
+
+</body>
+
+</html>
